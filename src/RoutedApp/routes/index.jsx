@@ -1,6 +1,9 @@
+// import SubscribeButton from '../../components/YouTube/SubscribeButton';
 export default function Index() {
   return (
     <>
+      {/* TODO: Move to separate section */}
+      {/* <SubscribeButton /> */}
       <p id="zero-state">
         This is a list of projects I made during my JavaScript & React learning
         process.

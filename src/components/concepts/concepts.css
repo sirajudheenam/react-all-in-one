@@ -1,7 +1,7 @@
 .concepts-flex-container {
   /* flex */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 2rem;
 
@@ -22,7 +22,9 @@
 }
 
 .concepts-flex-container-item {
-  align-self: flex-end;
+  align-self: baseline;
+  margin-right: auto;
+  margin-left: auto;
   background: rgb(229, 229, 235);
   border: .3rem solid #e3ebda;
   border-radius: .5rem;

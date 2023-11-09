@@ -98,7 +98,7 @@ const Concepts = () => {
   return (
     <>
       <div>
-        <span>Concepts</span>
+        <h1>Concepts</h1>
       </div>
 
       <div className="concepts-flex-container">

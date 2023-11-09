@@ -27,15 +27,10 @@ export async function loader({ request }) {
 const PublicLinkItems = function () {
   return (
     <>
-      <li>
-        <NavLink to="/">Home</NavLink>
-      </li>
       {/* <li>
         <NavLink to="profile">Profile</NavLink>
       </li> */}
-      <li>
-        <NavLink to="about">About Us</NavLink>
-      </li>
+
       <li>
         <NavLink to="privacy">Privacy</NavLink>
       </li>
@@ -50,6 +45,12 @@ const PublicLinkItems = function () {
 const PrivateLinkItems = function () {
   return (
     <>
+      <li>
+        <NavLink to="/">Home</NavLink>
+      </li>
+      <li>
+        <NavLink to="about">About Us</NavLink>
+      </li>
       <li>
         <NavLink to="atomic-posts">AtomicPosts</NavLink>
       </li>
@@ -160,8 +161,8 @@ export default function Root() {
         <h1>React All-in-One</h1>
         <nav>
           <ul>
-            <PublicLinkItems />
             <PrivateLinkItems />
+            <PublicLinkItems />
           </ul>
         </nav>
       </div>

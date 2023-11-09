@@ -199,7 +199,7 @@ export const PrivacyPolicy = () => {
       {appData && (
         <ul>
           <li>
-            By email: <b>{appData.email}</b>.
+            By email: <b> {appData.email}</b>.
           </li>
         </ul>
       )}
