@@ -7,7 +7,4 @@
 
 # https://github.com/google/google-api-javascript-client/blob/master/docs/start.mds
 
-
-
-
 ```
