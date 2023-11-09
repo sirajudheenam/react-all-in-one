@@ -1,6 +1,6 @@
 {
     "app": {
-        "name": "Sam-React-Demo-App",
+        "name": "React-All-In-One",
         "email": "amroinfo (at) gmail.com",
         "policyUpdatedAt": "2023-Oct-29",
         "social": {
@@ -9,15 +9,23 @@
                     {
                         "name": "technotipstoday",
                         "link": "https://www.youtube.com/@TechnoTipsToday"
+                    },
+                    {
+                        "name": "tamiltechnotips",
+                        "link": "https://www.youtube.com/@TamilTechnoTips"
+                    },
+                    {
+                        "name": "lifewisdomforu",
+                        "link": "https://www.youtube.com/@LifeWisdomForU"
                     }
                 ]
             }
         },
         "oauth0": {
             "google": {
-                "hompage": "https://sam-react-demo.vercel.app",
-                "privacyPolicyLink": "https://sam-react-demo.vercel.app/privacy",
-                "termsOfServiceLink": "https://sam-react-demo.vercel.app/terms"
+                "hompage": "https://react-aio.technotipstoday.dev",
+                "privacyPolicyLink": "https://react-aio.technotipstoday.dev/privacy",
+                "termsOfServiceLink": "https://react-aio.technotipstoday.dev/terms"
             }
         }
     }
