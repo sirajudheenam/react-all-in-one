@@ -1,0 +1,38 @@
+/* * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 20px;
+} */
+
+.de-flashcards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+
+}
+
+.de-flashcard {
+  border: 1px solid #e7e7e7;
+  /* background-color: #f7f7f7; */
+  border-radius: .5rem;
+  aspect-ratio: 2 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #5417a0;
+  color: orange;
+  font-weight: 300;
+}
+
+.de-flashcard.selected {
+  border: 1px solid #e03131;
+  background-color: #e03131;
+  color: #fff;
+  font-weight: bold;
+}

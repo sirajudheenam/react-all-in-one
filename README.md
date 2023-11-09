@@ -1,31 +1,27 @@
-# Create React App
+# react-demo
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+This is the learning project with many aspects of JavaScript and React concepts.
 
-## Deploy Your Own
+[Live site in Vercel](https://react-aio.technotipstoday.dev/)
 
-Deploy your own Create React App project with Vercel.
+Steps:
+<code>
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+</code>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/create-react-app&template=create-react-app)
+## References:
 
-_Live Example: https://create-react-template.vercel.app/_
+- [Source 1](https://github.com/jonasschmedtmann/ultimate-react-course)
+- [Source 2](https://github.com/MoonHighway/learning-react)
+- [Source 3](https://reactrouter.com/en/main/start/tutorial)
 
-## Available Scripts
+## ChangeLog:
 
-In the project directory, you can run:
+on 28 Oct 2023
 
-### `npm start`
-
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes. You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.
-
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+- Added pnpm package manager
+- Learn TypeScript
+- pnpm add typescript -D
+- pnpm tsc
+- Deployed to vercel

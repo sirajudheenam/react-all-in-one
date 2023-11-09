@@ -1,15 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
+
+// import Auth0ProviderApp from './Auth0ProviderApp/Auth0ProviderApp';
+import { RoutedApp } from './RoutedApp/RoutedApp';
+// import App from './App';
+
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { sendToVercelAnalytics } from './vitals';
 
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    {/* <Auth0ProviderApp /> */}
+    <RoutedApp />
+    {/* <App /> */}
+  </React.StrictMode>
 );
-
-reportWebVitals(sendToVercelAnalytics);

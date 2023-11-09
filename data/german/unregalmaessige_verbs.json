@@ -1,0 +1,874 @@
+{
+    "verb": [
+        {
+            "de": [
+                {
+                    "base": "backen",
+                    "ich": "backe",
+                    "wir": "backen",
+                    "du": "backst",
+                    "ihr": "backt",
+                    "es": "backt",
+                    "Sie": "backen",
+                    "imperpect": "backte-buk",
+                    "perfect": "gebacken",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": [
+                "cake",
+                "bake"
+            ]
+        },
+        {
+            "de": [
+                {
+                    "base": "befehlen",
+                    "ich": "befehle",
+                    "wir": "befehlen",
+                    "du": "befehlst",
+                    "ihr": "befehlt",
+                    "es": "befehlt",
+                    "Sie": "befehlen",
+                    "imperpect": "befahl",
+                    "perfect": "befohlen",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": [
+                "order",
+                "recommend"
+            ]
+        },
+        {
+            "de": [
+                {
+                    "base": "beginnen",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "begann",
+                    "perfect": "begonnen",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": [
+                "start",
+                "begin"
+            ]
+        },
+        {
+            "de": [
+                {
+                    "base": "beißen",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "biss",
+                    "perfect": "gebissen",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "bekommen",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "bekam",
+                    "perfect": "bekommen",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "bergen",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "barg",
+                    "perfect": "geborgen",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "betrügen",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "betrog",
+                    "perfect": "betrogen",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": [
+                "fool",
+                "trick",
+                "cheat"
+            ]
+        },
+        {
+            "de": [
+                {
+                    "base": "biegen",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "bog",
+                    "perfect": "gebogen",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": [
+                "turn"
+            ]
+        },
+        {
+            "de": [
+                {
+                    "base": "bieten",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "bot",
+                    "perfect": "geboten",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+        {
+            "de": [
+                {
+                    "base": "",
+                    "ich": "",
+                    "wir": "",
+                    "du": "",
+                    "ihr": "",
+                    "es": "",
+                    "Sie": "",
+                    "imperpect": "",
+                    "perfect": "",
+                    "synonyms": [],
+                    "antonyms": [],
+                    "notes": ""
+                }
+            ],
+            "en": []
+        },
+    ]
+}

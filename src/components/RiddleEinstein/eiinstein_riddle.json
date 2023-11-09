@@ -1,0 +1,38 @@
+{
+    {
+        "drink": "",
+        "smoke": "",
+        "color": "",
+        "nationality": "swedish",
+        "pets": "dogs",
+        "position": "1"
+    },
+    {
+        "drink": "tea",
+        "smoke": "",
+        "color": "",
+        "nationality": "Danish",
+        "pets": ""
+    },
+    {
+        "drink": "coffee",
+        "smoke": "",
+        "color": "",
+        "nationality": "",
+        "pets": ""
+    },
+    {
+        "drink": "milk",
+        "smoke": "",
+        "color": "",
+        "nationality": "",
+        "pets": ""
+    },
+    {
+        "drink": "water",
+        "smoke": "",
+        "color": "",
+        "nationality": "",
+        "pets": ""
+    },
+}

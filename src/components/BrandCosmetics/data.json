@@ -1,0 +1,24 @@
+{
+    "app": {
+        "name": "Sam-React-Demo-App",
+        "email": "amroinfo (at) gmail.com",
+        "policyUpdatedAt": "2023-Oct-29",
+        "social": {
+            "youtube": {
+                "channels": [
+                    {
+                        "name": "technotipstoday",
+                        "link": "https://www.youtube.com/@TechnoTipsToday"
+                    }
+                ]
+            }
+        },
+        "oauth0": {
+            "google": {
+                "hompage": "https://sam-react-demo.vercel.app",
+                "privacyPolicyLink": "https://sam-react-demo.vercel.app/privacy",
+                "termsOfServiceLink": "https://sam-react-demo.vercel.app/terms"
+            }
+        }
+    }
+}

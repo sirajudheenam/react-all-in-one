@@ -1,0 +1,56 @@
+.BankAccountApp {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: rgba(164, 152, 241, 0.8);
+    border: .2rem solid grey;
+    border-radius: .8rem;
+
+}
+
+.BankAccountFlexContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    justify-content: center;
+    border: .2rem solid grey;
+    border-radius: .8rem;
+}
+
+.BankAccountFlexItem {
+    align-self: center;
+}
+
+.BankAccountApp button {
+    margin: 1rem;
+    padding: 1rem;
+    background: linear-gradient(45deg, red, orange);
+    /*
+        linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+    */
+    color: black;
+}
+
+.BankAccountApp button:disabled {
+    margin: 1rem;
+    padding: 1rem;
+    background: transparent;
+    color: black;
+}
+
+.BankAccountApp .message {
+    color: rgb(37, 33, 33);
+}
+
+.BankAccountApp .error {
+    color: rgb(74, 5, 5);
+}
+
+.BankAccountApp .balance {
+    background-color: bisque;
+    color: blue;
+}

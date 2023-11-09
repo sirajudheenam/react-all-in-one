@@ -1,0 +1,88 @@
+.blocknote-container {
+    height: 98%;
+    width: 98%;
+    background: lightyellow;
+    border: .2rem solid grey;
+    border-radius: .5rem;
+    box-shadow: .2rem .2rem .2rem .2rem rgb(14, 0, 0);
+}
+
+.blocknote-header-flex-container {
+    display: flex;
+    flex: 0;
+
+    flex-direction: row;
+    /* align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe; */
+    align-items: baseline;
+    /*   justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe; */
+    justify-content: space-evenly;
+
+}
+
+.blocknote-header-flex-item-1 {
+    order: 1;
+
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2rem;
+    /* flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
+    /* flex-grow: 1; */
+
+    color: orange;
+    background: transparent;
+
+    border: .2rem solid grey;
+    border-radius: 1rem;
+    box-shadow: .2rem .2rem .2rem .2rem rgb(14, 0, 0);
+
+}
+
+.blocknote-header-flex-item-1:hover {
+    background: grey;
+    color: blue;
+    border: .2rem solid grey;
+    border-radius: 1rem;
+    box-shadow: .2rem .2rem .1rem .2rem rgb(79, 23, 23);
+}
+
+.blocknote-header-flex-item-2 {
+    order: 2;
+
+    /* background: yellow;
+    border: .2rem solid grey;
+    border-radius: .5rem;
+    box-shadow: .2rem .2rem .2rem .2rem rgb(14, 0, 0); */
+}
+
+.blocknote-header-flex-item-3 {
+    order: 3;
+
+    /* align-self: auto | flex-start | flex-end | center | baseline | stretch; */
+    align-self: center;
+
+    /* background: orange;
+    border: .2rem solid grey;
+    border-radius: .5rem;
+    box-shadow: .2rem .2rem .2rem .2rem rgb(14, 0, 0); */
+}
+
+
+.tooltip {
+    visibility: hidden;
+}
+
+.tooltip-hover:hover+.tooltip {
+    /* Uses the adjacent sibling selector */
+    visibility: visible;
+    /* Or display: block */
+}
+
+.blocknote-container h1 {
+    text-align: center;
+}
+
+.blocknote-container h6 {
+    text-align: center;
+}

@@ -1,0 +1,30 @@
+.concepts-flex-container {
+  /* flex */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  /* for row direction */
+  /* align-items: baseline; */
+  justify-content: space-around;
+  /* flex */
+
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(229, 229, 235);
+  border: .3rem solid #e3ebda;
+  border-radius: .5rem;
+  box-shadow: -5px .5rem .5rem .5rem rgb(205, 187, 187);
+
+  align-items: normal;
+  justify-content: center;
+}
+
+.concepts-flex-container-item {
+  align-self: flex-end;
+  background: rgb(229, 229, 235);
+  border: .3rem solid #e3ebda;
+  border-radius: .5rem;
+  box-shadow: -5px .5rem .5rem .5rem rgb(205, 187, 187);
+}

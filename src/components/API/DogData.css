@@ -1,0 +1,76 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+.dog-data {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    border: .2rem solid rgb(206, 194, 194) !important;
+    border-radius: 1rem !important;
+    background: rgb(237, 237, 228) !important;
+    border: .3rem solid #e3ebda;
+    border-radius: .5rem;
+    box-shadow: -5px 10px 10px 10px rgb(221, 157, 157);
+
+    /* outline: dashed 1px black; */
+    /* Center child horizontally*/
+    justify-content: center;
+}
+
+.imageWrapper {
+    display: flex;
+}
+
+.previousButton {
+    flex: 2%;
+}
+
+.ImageArea {
+    flex: 96%;
+}
+
+.nextButton {
+    flex: 2%;
+}
+
+.dog-data img {
+    border-radius: 8px;
+    /* Oval Shape*/
+    /* border-radius: 50%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* max-height: 450px;
+    max-width: 700px; */
+    max-height: 90%;
+    max-width: 90%;
+
+    /* height: 90%;
+    width: 90%; */
+
+    /* fill cover contain scale-down */
+    object-fit: scale-down;
+
+
+}
+
+.dog-data .btn {
+    background: orange;
+    /* align-items: left; */
+}
+
+.dog-data .btn:hover {
+
+    background: yellow;
+}
+
+.dog-data table tr td {
+    /* font-size: 2rem !important; */
+    color: green;
+    border: #392899;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
