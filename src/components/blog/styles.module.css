@@ -1,0 +1,85 @@
+.blogContainer {
+    /* height: 98%;
+    width: 98%;
+    background: green;
+    border: .2rem solid grey;
+    border-radius: .5rem;
+    box-shadow: .2rem .2rem .2rem .2rem rgb(235, 229, 229); */
+    /* overflow: hidden; */
+}
+
+.blogPostComment {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+    height: 10rem; */
+}
+
+.blogPostCommentAvatar {
+    /* border-radius: 8px; */
+
+    /* Oval Shape*/
+    /* border-radius: 50%; */
+
+    /* align-self: center; */
+
+    /* display: block; */
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.blogPostCommentAvatar:hover {
+    /* border-radius: 1rem; */
+}
+
+.blogPostCommentAvatarImage {
+    /* height: 2rem;
+    width: 2rem; */
+    /* object-fit: scale-down; */
+    /* border-radius: 1rem;
+    align-self: center; */
+}
+
+
+.blogPostCommentContent {
+    align-self: center;
+}
+
+.blogPostCommentContentAuthor {
+    /* align-self: center; */
+}
+
+.blogPostCommentContentMetadata {
+    /* align-self: center; */
+}
+
+.blogPostCommentContentDate {}
+
+.blogPostCommentContentText {}
+
+/* UserCard */
+.userCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+    height: 50%;
+    width: 50%;
+    background: rgb(223, 223, 121);
+    border: .2rem solid grey;
+    border-radius: .5rem;
+    box-shadow: .2rem .2rem .2rem .2rem rgb(14, 0, 0);
+    overflow: hidden;
+}
+
+
+.userCardContent {}
+
+.userCardContentHeader {}
+
+.userCardContentDescription {}
+
+.userCardBottom {}
+
+.userCardBottomAddIcon {}

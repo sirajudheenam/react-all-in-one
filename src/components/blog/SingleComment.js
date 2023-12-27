@@ -1,25 +1,25 @@
 import React from 'react';
-
+import styles from './styles.module.css';
 const SingleComment = (props) => {
   return (
-    <div className="blog-post-comment">
-      <a href="/" className="blog-post-comment-avatar">
-        <div className="blog-post-comment-avatar-div">
+    <div className="blogPostComment">
+      <a href="/" className="blogPostCommentAvatar">
+        <div className="blogPostCommentAvatar">
           <img
             src={props.picture}
             alt="profile"
-            className="blog-post-comment-avatar-div-image"
+            className="blogPostCommentAvatarImage"
           />
         </div>
       </a>
-      <div className="blog-post-comment-content">
-        <a href="/" className="blog-post-comment-content-author">
+      <div className="blogPostCommentContent">
+        <a href="/" className="blogPostCommentContentAuthor">
           {props.name}
         </a>
-        <div className="blog-post-comment-content-metadata">
-          <span className="blog-post-comment-content-date">{props.date}</span>
+        <div className="blogPostCommentContentMetadata">
+          <span className="blogPostCommentContentDate">{props.date}</span>
         </div>
-        <div className="blog-post-comment-content-text">{props.text}</div>
+        <div className="blogPostCommentContentText">{props.text}</div>
       </div>
     </div>
   );

@@ -1,14 +1,16 @@
 import React from 'react';
+import styles from './styles.module.css';
 
-const UserCard = (props) => {
+
+const UserCard = ({ children }) => {
   return (
-    <div className="user-card">
-      <div className="user-card-content">
-        <div className="user-card-content-header"></div>
-        <div className="user-card-content-description">{props.children}</div>
+    <div className={styles.userCard}>
+      <div className="userCardContent">
+        <div className="userCardContentHeader"></div>
+        <div className="userCardContentHescription">{children}</div>
       </div>
-      <div className="user-card-bottom-button">
-        <i className="user-card-bottom-button-add-icon">Add Friend</i>
+      <div className="userCardBottomButton">
+        <i className="userCardBottomButtonAddIcon">Add Friend</i>
       </div>
     </div>
   );

@@ -65,6 +65,8 @@ import ClockApp, {
   action as clockAction,
 } from '../components/clock/ClockApp';
 
+import CSS from '../components/css/css';
+
 import ClassComponentDemo, {
   loader as classComponentDemoLoader,
   action as classComponentDemoAction,
@@ -269,6 +271,7 @@ const router = createBrowserRouter(
           action={bankAccountAction}
         />
 
+        <Route path="css" element={<CSS />} />
         <Route
           path="de-flashcard"
           element={<DEFlashCardApp />}

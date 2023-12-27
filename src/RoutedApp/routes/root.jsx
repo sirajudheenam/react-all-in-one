@@ -58,6 +58,9 @@ const PrivateLinkItems = function () {
         <NavLink to="bank-account">BankAccountApp</NavLink>
       </li>
       <li>
+        <NavLink to="css">CSS</NavLink>
+      </li>
+      <li>
         <NavLink to="de-flashcard">DEFlashCard</NavLink>
       </li>
       <li>

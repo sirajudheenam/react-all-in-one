@@ -5,7 +5,7 @@ import Profile1 from './images/pic-1.jpeg';
 import Profile2 from './images/pic-2.jpeg';
 import Profile3 from './images/pic-3.jpeg';
 
-import './BlogCommentApp.css';
+import styles from './styles.module.css';
 const commenters = [
   'Wafiqah',
   'Tishya',
@@ -24,7 +24,7 @@ export async function loader({ request }) {
 }
 const BlogCommentApp = () => {
   return (
-    <div className="blog-container">
+    <div className={styles.blogContainer}>
       <UserCard>
         <SingleComment
           name={commenters[0]}

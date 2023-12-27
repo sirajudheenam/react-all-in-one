@@ -1,0 +1,211 @@
+.gridContainer {
+    background-color: linen;
+    height: 90%;
+    width: 90%;
+    margin: .5rem;
+    padding: .5rem;
+    border: .1rem solid linen;
+    border-radius: .5rem;
+    box-shadow: -10px 10px 5px 0px rgba(236, 54, 54, 0.75);
+
+
+}
+
+.boxOne {
+    height: 4rem;
+    width: 40rem;
+    background-color: yellow;
+    color: blue;
+    border: 2px solid yellow;
+    border-radius: .5rem;
+    animation: fadeIn ease 5s;
+    box-shadow: -10px 10px 5px 0px rgba(125, 49, 49, 0.75);
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+    /* fadeIn 'slow'; */
+    text-align: center;
+}
+
+.boxOne:hover {
+    height: 4rem;
+    width: 40rem;
+    background-color: orange;
+    color: blue;
+    border: 2px solid orange;
+    border-radius: .5rem;
+    animation: fadeIn ease 5s;
+    /* box-shadow: -10px 10px 5px 0px rgba(125, 49, 49, 0.95); */
+    box-shadow: -10px 10px 5px 0px currentcolor;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+    /* fadeIn 'slow'; */
+}
+
+.boxTwo {
+    height: 4rem;
+    width: 40rem;
+    background-color: orange;
+    color: blue;
+    border: 1px solid orange;
+    border-radius: .5rem;
+    box-shadow: -10px 10px 5px 0px rgba(93, 7, 7, 0.75);
+    margin: 0 auto;
+    text-align: center;
+    /* fadeIn 'slow'; */
+}
+
+.boxTwo:hover {
+
+    background-color: yellow;
+    border: 1px solid yellow;
+
+}
+
+.heading {
+    text-align: center;
+    color: maroon;
+    margin-left: 40px;
+    margin: auto;
+}
+
+.para {
+    text-align: center;
+    margin: auto;
+}
+
+/* Container grid cell */
+.topContainer {
+    display: grid;
+    /* static column size */
+    /* grid-template-columns: 100px 100px 100px; */
+    /*dynamic fr (fraction unit) for flexible spacing to fill 3 columns relative to screenwidth*/
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 100px 100px; */
+    grid-template-rows: 1fr 1fr;
+    grid-gap: .5rem;
+    border: 1px solid rgb(223, 214, 204);
+    border-radius: .5rem;
+    box-shadow: -10px 10px 5px 0px rgba(187, 105, 105, 0.75);
+    margin: auto;
+}
+
+.cell {
+    background-color: lightblue;
+    border: solid 1px blue;
+    line-height: 100px;
+    text-align: center;
+    border-radius: .5rem;
+
+}
+
+.special {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background-color: orange;
+}
+
+.bottomContainer {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px;
+    grid-gap: 1rem;
+    grid-template-areas:
+        'top 		top'
+        'middle-1 middle-2 '
+        'bottom 	bottom';
+    border: 1px solid rgb(223, 214, 204);
+    border-radius: .5rem;
+    box-shadow: -10px 10px 5px 0px rgba(187, 105, 105, 0.75);
+    margin: auto;
+}
+
+.cellTwo {
+    background-color: lightblue;
+    border: solid 1px blue;
+    line-height: 100px;
+    text-align: center;
+}
+
+.top {
+    grid-area: top;
+    background-color: green;
+    border-radius: .5rem;
+}
+
+.middle-1 {
+    grid-area: middle-1;
+    background-color: orange;
+    border-radius: .5rem;
+}
+
+.middle-2 {
+    grid-area: middle-2;
+    background-color: yellow;
+    border-radius: .5rem;
+}
+
+.bottom {
+    grid-area: bottom;
+    background-color: blue;
+    border-radius: .5rem;
+}
+
+.fade-in {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

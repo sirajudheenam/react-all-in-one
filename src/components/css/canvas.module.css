@@ -1,0 +1,10 @@
+.myCanvas {
+    background-color: linen;
+    height: 90%;
+    width: 90%;
+    margin: .5rem;
+    padding: .5rem;
+    border: .1rem solid linen;
+    border-radius: .5rem;
+    box-shadow: -10px 10px 5px 0px rgba(236, 54, 54, 0.75);
+}
