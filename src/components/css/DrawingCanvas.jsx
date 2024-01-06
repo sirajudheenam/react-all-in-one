@@ -1,11 +1,13 @@
 import React, { useRef, useEffect, useState } from 'react';
 import styles from './drawingCanvas.module.css';
+
 const DrawingCanvas = () => {
     const canvasRef = useRef(null);
     const contextRef = useRef(null);
     const colorRef = useRef(null);
     const [canvas, setCanvas] = useState(null);
     const [context, setContext] = useState(null);
+    const [currentTool, setCurrentTool] = useState('FREESTYLE');
     const [isDrawing, setIsDrawing] = useState(false);
 
     useEffect(() => {
@@ -49,11 +51,28 @@ const DrawingCanvas = () => {
     };
 
     const draw = ({ nativeEvent }) => {
-        if (!isDrawing) {
+        if (!isDrawing || !currentTool) {
             return;
         }
         const { offsetX, offsetY } = nativeEvent;
-        contextRef.current.lineTo(offsetX, offsetY);
+        switch (currentTool) {
+            case 'FREESTYLE':
+                contextRef.current.lineTo(offsetX, offsetY);
+                console.log(contextRef);
+                break;
+            // case 'CIRCLE':
+            //     console.log(contextRef.current);
+            //     contextRef.current.arc(offsetX, offsetY);
+            //     break;
+            default:
+                contextRef.current.lineTo(offsetX, offsetY);
+        }
+        // contextRef.current.lineTo(offsetX, offsetY);
+        contextRef.current.stroke();
+    };
+    const drawCircle = () => {
+        contextRef.current.beginPath();
+        contextRef.current.arc(100, 100, 50, 0, 2 * Math.PI);
         contextRef.current.stroke();
     };
 
@@ -65,8 +84,8 @@ const DrawingCanvas = () => {
 
         <div>
             <div className={styles.tools}>
-                Tools
                 <input type="color" ref={colorRef} name="color" onChange={handleColorChange} />
+                <button onClick={drawCircle}>Circle</button>
                 <button onClick={clearDrawing}>Clear</button>
             </div>
             <canvas
@@ -75,6 +94,7 @@ const DrawingCanvas = () => {
                 onMouseMove={draw}
                 ref={canvasRef}
                 className={styles.drawingCanvas}
+                id="myCanvas"
             />
         </div>
     );
