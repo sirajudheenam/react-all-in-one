@@ -52,22 +52,13 @@ const PrivateLinkItems = function () {
         <NavLink to="about">About Us</NavLink>
       </li>
       <li>
+        <NavLink to="accordion">Accordion</NavLink>
+      </li>
+      <li>
         <NavLink to="atomic-posts">AtomicPosts</NavLink>
       </li>
       <li>
         <NavLink to="bank-account">BankAccountApp</NavLink>
-      </li>
-      <li>
-        <NavLink to="css">CSS</NavLink>
-      </li>
-      <li>
-        <NavLink to="de-flashcard">DEFlashCard</NavLink>
-      </li>
-      <li>
-        <NavLink to="de-quiz">Leben-in-Deutschland</NavLink>
-      </li>
-      <li>
-        <NavLink to="accordion">Accordion</NavLink>
       </li>
       <li>
         <NavLink to="blocknote">BlockNote</NavLink>
@@ -78,9 +69,9 @@ const PrivateLinkItems = function () {
       <li>
         <NavLink to="clock">ClockApp</NavLink>
       </li>
-      {/* <li>
-        <NavLink to="drag-and-drop">DragDrop</NavLink>
-      </li> */}
+      <li>
+        <NavLink to="css">CSS</NavLink>
+      </li>
       <li>
         <NavLink to="class-component-demo">Class Component</NavLink>
       </li>
@@ -91,16 +82,19 @@ const PrivateLinkItems = function () {
         <NavLink to="conditional-rendering">Conditional Rendering</NavLink>
       </li>
       <li>
-        <NavLink to="use-effect-demo">useEffect Demo</NavLink>
+        <NavLink to="de-flashcard">DEFlashCard</NavLink>
       </li>
       <li>
-        <NavLink to="use-transition-demo">useTransition Demo</NavLink>
+        <NavLink to="de-quiz">Leben-in-Deutschland</NavLink>
       </li>
-      <li>
-        <NavLink to="use-ref-demo">useRef Demo</NavLink>
-      </li>
+      {/* <li>
+        <NavLink to="drag-and-drop">DragDrop</NavLink>
+      </li> */}
       <li>
         <NavLink to="dog-data">DogData</NavLink>
+      </li>
+      <li>
+        <NavLink to="expenses">Expenses (Sherief)</NavLink>
       </li>
       <li>
         <NavLink to="fetch-api">Fetch API</NavLink>
@@ -153,6 +147,15 @@ const PrivateLinkItems = function () {
       </li>
       <li>
         <NavLink to="use-popcorn">UsePopcorn</NavLink>
+      </li>
+      <li>
+        <NavLink to="use-effect-demo">useEffect Demo</NavLink>
+      </li>
+      <li>
+        <NavLink to="use-transition-demo">useTransition Demo</NavLink>
+      </li>
+      <li>
+        <NavLink to="use-ref-demo">useRef Demo</NavLink>
       </li>
     </>
   );

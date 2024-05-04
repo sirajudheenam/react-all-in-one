@@ -128,6 +128,13 @@ import EatAndSplit, {
   action as eatAndSplitAction,
 } from "../components/course/EatAndSplit/EatAndSplit-v1";
 
+
+import Expenses, {
+  loader as expensesLoader,
+  action as expensesAction,
+} from "../components/Expenses/App";
+
+
 import FlashCardApp, {
   loader as flashCardAppLoader,
   action as flashCardAppAction,
@@ -409,6 +416,12 @@ const router = createBrowserRouter(
           element={<EatAndSplit />}
           loader={eatAndSplitLoader}
           action={eatAndSplitAction}
+        />
+        <Route
+          path="expenses"
+          element={<Expenses />}
+          loader={expensesLoader}
+          action={expensesAction}
         />
         <Route
           path="flash-card-app"

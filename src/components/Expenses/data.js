@@ -1,0 +1,38 @@
+export const expenseData = [
+  {
+    id: 1,
+    name: "Movies Tickets",
+    category: "Entertainment",
+    date: '03-13-2024',
+    amt: "INR 800",
+    update: "Just Now",
+    create: "Sherief",
+  },
+  {
+    id: 2,
+    name: "Tablets",
+    category: "Health",
+    date: '03-14-2024',
+    amt: "INR 1200",
+    update: "Just Now",
+    create: "Ibunsali",
+  },
+  {
+    id: 3,
+    name: "Fees",
+    category: "Education",
+    date: '03-11-2024',
+    amt: "INR 8000",
+    update: "Just Now",
+    create: "Arsath",
+  },
+  {
+    id: 4,
+    name: "Horry Porter",
+    category: "Books",
+    date: '03-10-2024',
+    amt: "INR 500",
+    update: "Just Now",
+    create: "Sherief",
+  },
+];
