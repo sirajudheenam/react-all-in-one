@@ -11,7 +11,9 @@
                 "Sie": "sind",
                 "synonyms": [],
                 "antonyms": [],
-                "notes": ""
+                "notes": "",
+                "präsens": "ist",
+                "präteritum": "wart"
             },
             "en": "be"
         },
@@ -239,141 +241,6 @@
                 "notes": ""
             },
             "en": "to have interest on sth"
-        },
-        {
-            "de": {
-                "base": "",
-                "ich": "",
-                "wir": "",
-                "du": "",
-                "ihr": "",
-                "es": "",
-                "Sie": "",
-                "synonyms": [],
-                "antonyms": [],
-                "notes": ""
-            },
-            "en": ""
-        },
-        {
-            "de": {
-                "base": "",
-                "ich": "",
-                "wir": "",
-                "du": "",
-                "ihr": "",
-                "es": "",
-                "Sie": "",
-                "synonyms": [],
-                "antonyms": [],
-                "notes": ""
-            },
-            "en": ""
-        },
-        {
-            "de": {
-                "base": "",
-                "ich": "",
-                "wir": "",
-                "du": "",
-                "ihr": "",
-                "es": "",
-                "Sie": "",
-                "synonyms": [],
-                "antonyms": [],
-                "notes": ""
-            },
-            "en": ""
-        },
-        {
-            "de": {
-                "base": "",
-                "ich": "",
-                "wir": "",
-                "du": "",
-                "ihr": "",
-                "es": "",
-                "Sie": "",
-                "synonyms": [],
-                "antonyms": [],
-                "notes": ""
-            },
-            "en": ""
-        },
-        {
-            "de": {
-                "base": "",
-                "ich": "",
-                "wir": "",
-                "du": "",
-                "ihr": "",
-                "es": "",
-                "Sie": "",
-                "synonyms": [],
-                "antonyms": [],
-                "notes": ""
-            },
-            "en": ""
-        },
-        {
-            "de": {
-                "base": "",
-                "ich": "",
-                "wir": "",
-                "du": "",
-                "ihr": "",
-                "es": "",
-                "Sie": "",
-                "synonyms": [],
-                "antonyms": [],
-                "notes": ""
-            },
-            "en": ""
-        },
-        {
-            "de": {
-                "base": "",
-                "ich": "",
-                "wir": "",
-                "du": "",
-                "ihr": "",
-                "es": "",
-                "Sie": "",
-                "synonyms": [],
-                "antonyms": [],
-                "notes": ""
-            },
-            "en": ""
-        },
-        {
-            "de": {
-                "base": "",
-                "ich": "",
-                "wir": "",
-                "du": "",
-                "ihr": "",
-                "es": "",
-                "Sie": "",
-                "synonyms": [],
-                "antonyms": [],
-                "notes": ""
-            },
-            "en": ""
-        },
-        {
-            "de": {
-                "base": "",
-                "ich": "",
-                "wir": "",
-                "du": "",
-                "ihr": "",
-                "es": "",
-                "Sie": "",
-                "synonyms": [],
-                "antonyms": [],
-                "notes": ""
-            },
-            "en": ""
         }
     ]
 }

@@ -1,192 +1,198 @@
-import React from 'react';
+import React from "react";
 
 import {
   createBrowserRouter,
   RouterProvider,
   createRoutesFromElements,
   Route,
-} from 'react-router-dom';
+} from "react-router-dom";
 
 import Root, {
   loader as rootLoader,
   action as rootAction,
-} from './routes/root';
+} from "./routes/root";
 
 // import Profile from '../Auth0ProviderApp/Profile';
 
 // import Login from '../../Auth0ProviderApp/Login';
 // import Logout from '../../Auth0ProviderApp/Logout';
 
+import DragDrop from "../components/DragDrop/DragDrop";
 import {
   About,
   aboutLoader,
   aboutAction,
-} from '../components/BrandCosmetics/Corporate';
+} from "../components/BrandCosmetics/Corporate";
 
 import {
   PrivacyPolicy,
   privacyLoader,
   privacyAction,
-} from '../components/BrandCosmetics/Corporate';
+} from "../components/BrandCosmetics/Corporate";
 
 import {
   TermsOfService,
   termsLoader,
   termsAction,
-} from '../components/BrandCosmetics/Corporate';
+} from "../components/BrandCosmetics/Corporate";
 
 import FetchAPI, {
   loader as fetchLoader,
   action as fetchAction,
-} from '../components/API/FetchAPI';
+} from "../components/API/FetchAPI";
 
 import GitHubFetch, {
   loader as gitHubFetchLoader,
   action as gitHubFetchAction,
-} from '../components/API/GitHubFetch';
+} from "../components/API/GitHubFetch";
 
 import DogData, {
   loader as dogDataLoader,
   action as dogDataAction,
-} from '../components/API/DogData';
+} from "../components/API/DogData";
 
 import BlockNote, {
   loader as blockNoteLoader,
   action as blockNoteAction,
-} from '../components/BlockNote/BlockNote';
+} from "../components/BlockNote/BlockNote";
 
 import BlogCommentApp, {
   loader as blogLoader,
   action as blogAction,
-} from '../components/blog/BlogCommentApp';
+} from "../components/blog/BlogCommentApp";
 
 import ClockApp, {
   loader as clockLoader,
   action as clockAction,
-} from '../components/clock/ClockApp';
+} from "../components/clock/ClockApp";
 
-import CSS from '../components/css/css';
+import CSS from "../components/css/css";
 
 import ClassComponentDemo, {
   loader as classComponentDemoLoader,
   action as classComponentDemoAction,
-} from '../components/concepts/ClassComponentDemo';
+} from "../components/concepts/ClassComponentDemo";
 
 import Concepts, {
   loader as conceptsDemoLoader,
   action as conceptsDemoAction,
-} from '../components/concepts/Concepts';
+} from "../components/concepts/Concepts";
 
 import ConditionalRendering, {
   loader as conditionalRenderingLoader,
   action as conditionalRenderingAction,
-} from '../components/concepts/ConditionalRendering';
+} from "../components/concepts/ConditionalRendering";
 
 import UseEffectDemo, {
   loader as useEffectDemoLoader,
   action as useEffectDemoAction,
-} from '../components/concepts/UseEffectDemo';
+} from "../components/concepts/UseEffectDemo";
 
 import UseTransitionDemo, {
   loader as useTransitionDemoLoader,
   action as useTransitionDemoAction,
-} from '../components/concepts/UseTransitionDemo';
+} from "../components/concepts/UseTransitionDemo";
+
+import UseRefDemo, {
+  loader as useRefDemoLoader,
+  action as useRefDemoAction,
+} from "../components/concepts/UseRefDemo";
 
 import CountriesList, {
   loader as countriesListLoader,
   action as countriesListAction,
-} from '../components/CountriesList/CountriesList';
+} from "../components/CountriesList/CountriesList";
 
 import Accordion, {
   loader as accordionLoader,
   action as accordionAction,
-} from '../components/course/Accordion/App-v1';
+} from "../components/course/Accordion/App-v1";
 
 import Advice, {
   loader as adviceLoader,
   action as adviceAction,
-} from '../components/course/Advice/Advice';
+} from "../components/course/Advice/Advice";
 
 import CurrencyConverter, {
   loader as currencyConverterLoader,
   action as currencyConverterAction,
-} from '../components/course/CurrencyConverter/CurrencyConverter';
+} from "../components/course/CurrencyConverter/CurrencyConverter";
 
 import DateCountApp, {
   loader as dateCountAppLoader,
   action as dateCountAppAction,
-} from '../components/course/DateCountApp/DateCountApp';
+} from "../components/course/DateCountApp/DateCountApp";
 
 import EatAndSplit, {
   loader as eatAndSplitLoader,
   action as eatAndSplitAction,
-} from '../components/course/EatAndSplit/EatAndSplit-v1';
+} from "../components/course/EatAndSplit/EatAndSplit-v1";
 
 import FlashCardApp, {
   loader as flashCardAppLoader,
   action as flashCardAppAction,
-} from '../components/course/FlashCardApp/FlashCardApp';
+} from "../components/course/FlashCardApp/FlashCardApp";
 
 import PizzaApp, {
   loader as pizzaAppLoader,
   action as pizzaAppAction,
-} from '../components/course/PizzaApp/PizzaApp';
+} from "../components/course/PizzaApp/PizzaApp";
 
 import ReactQuiz, {
   loader as reactQuizLoader,
   action as reactQuizAction,
-} from '../components/course/ReactQuiz/ReactQuiz';
+} from "../components/course/ReactQuiz/ReactQuiz";
 
 import ScoreCard, {
   loader as scoreCardLoader,
   action as scoreCardAction,
-} from '../components/course/ScoreCard/ScoreCard';
+} from "../components/course/ScoreCard/ScoreCard";
 
 import Steps, {
   loader as stepsLoader,
   action as stepsAction,
-} from '../components/course/Steps/App-v1';
+} from "../components/course/Steps/App-v1";
 
 import TipNSplit, {
   loader as tipNSplitLoader,
   action as tipNSplitAction,
-} from '../components/course/TipNSplit/TipNSplitv1';
+} from "../components/course/TipNSplit/TipNSplitv1";
 
 import {
   TodoList,
   loader as todoListLoader,
   action as todoListAction,
-} from '../components/course/TodoList/TodoList';
+} from "../components/course/TodoList/TodoList";
 
 import TravelList, {
   loader as travelListLoader,
   action as travelListAction,
-} from '../components/course/TravelList/TravelList';
+} from "../components/course/TravelList/TravelList";
 
 import UseGeoLocation, {
   loader as useGeoLocationLoader,
   action as useGeoLocationAction,
-} from '../components/course/UseGeoLocation/UseGeoLocation';
+} from "../components/course/UseGeoLocation/UseGeoLocation";
 
 import UsePopcorn, {
   loader as usePopcornLoader,
   action as usePopcornAction,
-} from '../components/course/UsePopcorn/App-v3';
+} from "../components/course/UsePopcorn/App-v3";
 
 import DEQuiz, {
   loader as dEQuizLoader,
   action as dEQuizAction,
-} from '../components/DEQuiz/DEQuiz';
+} from "../components/DEQuiz/DEQuiz";
 
 import DEFlashCardApp, {
   loader as dEFlashCardLoader,
   action as dEFlashCardAction,
-} from '../components/DEFlashCardApp/DEFlashCardApp';
+} from "../components/DEFlashCardApp/DEFlashCardApp";
 
 import BankAccount, {
   loader as bankAccountLoader,
   action as bankAccountAction,
-} from '../components/course/BankAccount/BankAccount';
+} from "../components/course/BankAccount/BankAccount";
 
 /* 
   // Context in Same file
@@ -200,10 +206,10 @@ import BankAccount, {
 import AtomicPosts, {
   loader as atomicPostsLoader,
   action as atomicPostsAction,
-} from '../components/course/AtomicPosts/v1/App-v1';
+} from "../components/course/AtomicPosts/v1/App-v1";
 
-import Index from './routes/index';
-import ErrorPage from './error-page';
+import Index from "./routes/index";
+import ErrorPage from "./error-page";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -263,6 +269,7 @@ const router = createBrowserRouter(
           loader={atomicPostsLoader}
           action={atomicPostsAction}
         />
+        <Route path="drag-and-drop" element={<DragDrop />} />
 
         <Route
           path="bank-account"
@@ -358,7 +365,12 @@ const router = createBrowserRouter(
           loader={useTransitionDemoLoader}
           action={useTransitionDemoAction}
         />
-
+        <Route
+          path="use-ref-demo"
+          element={<UseRefDemo />}
+          loader={useRefDemoLoader}
+          action={useRefDemoAction}
+        />
         <Route
           path="countries-list"
           element={<CountriesList />}

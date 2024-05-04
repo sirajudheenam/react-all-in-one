@@ -16,6 +16,14 @@ npx tailwindcss init -p
 - [Source 2](https://github.com/MoonHighway/learning-react)
 - [Source 3](https://reactrouter.com/en/main/start/tutorial)
 
+## Adding Drag and Drop Component - 8 Feb 2024
+
+```bash
+# TODO
+pnpm add react-dnd react-dnd-html5-backend immutability-helper
+
+```
+
 ## ChangeLog:
 
 on 28 Oct 2023

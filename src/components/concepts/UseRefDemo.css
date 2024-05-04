@@ -1,0 +1,221 @@
+/* 
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
+  }
+*/
+
+
+
+h1 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+h4 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+h5 {
+    margin-top: 0;
+    font-size: 14px;
+}
+
+h6 {
+    margin-top: 0;
+    font-size: 12px;
+}
+
+code {
+    font-size: 1.2em;
+}
+
+ul {
+    padding-inline-start: 20px;
+}
+
+/* div {
+    width: 100%;
+    overflow: hidden;
+} */
+
+nav {
+    text-align: center;
+}
+
+button {
+    margin: .25rem;
+}
+
+ul.catUL,
+li.catLI {
+    list-style: none;
+    white-space: nowrap;
+}
+
+li.catLI {
+    display: inline;
+    padding: 0.5rem;
+}
+
+input {
+    margin: .5rem;
+}
+
+button {
+    margin: .5rem
+}
+
+.useRefWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 99%;
+}
+
+.RefSameComponent {
+    gap: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    overflow: hidden;
+    border: .3rem solid grey;
+    border-radius: .5rem;
+    height: 25%;
+}
+
+.RefSameComponent input {
+    margin-left: auto;
+    margin-right: auto;
+    margin: .7rem;
+}
+
+.RefSameComponent button {
+    margin-left: auto;
+    margin-right: auto;
+    margin: .7rem;
+}
+
+.RefDiffComponent {
+    gap: .5rem;
+    margin: .8rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    overflow: hidden;
+    border: .3rem solid grey;
+    border-radius: .5rem;
+    height: 25%;
+}
+
+.RefDiffComponent input {
+
+    margin-left: auto;
+    margin-right: auto;
+    margin: .7rem;
+
+}
+
+.RefDiffComponent button {
+
+    margin-left: auto;
+    margin-right: auto;
+    margin: .7rem;
+
+}
+
+.catFriends {
+    width: 100%;
+    overflow: hidden;
+    border: .3rem solid grey;
+    border-radius: .5rem;
+}
+
+.catContainer {
+    width: 30%;
+    overflow: hidden;
+    border: .3rem solid grey;
+    border-radius: .5rem;
+    height: 25%;
+}
+
+.todoList {
+    width: 30%;
+    margin-top: 1rem;
+    border: .3rem solid rgba(26, 12, 12, 0.5);
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px rgba(120, 102, 102, 0.2);
+}
+
+.todoList button,
+input {
+    margin: 1rem;
+}
+
+.counterUseRef {
+    border: .3rem solid rgb(240, 235, 235);
+    border-radius: .5rem;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    height: 35rem;
+    width: 35rem;
+    margin: 1rem;
+}
+
+.counterUseRef button,
+p {
+    margin: 1rem;
+}
+
+.videoPlayer {
+    border: .3rem solid rgb(240, 235, 235);
+    border-radius: .5rem;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    height: 35rem;
+    width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin: .7rem;
+}
+
+.videoPlayer button {
+    margin: 2rem;
+}
+
+.videoPlayer video {
+    margin: 2rem;
+}
+
+.videoPlayer2 {
+    border: .3rem solid rgb(240, 235, 235);
+    border-radius: .5rem;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    height: 35rem;
+    width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin: .7rem;
+}
+
+.videoPlayer2 button {
+    margin: 2rem;
+}
+
+.videoPlayer2 video {
+    margin: 2rem;
+}

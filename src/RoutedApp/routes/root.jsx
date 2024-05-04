@@ -6,15 +6,15 @@ import {
   redirect,
   useNavigation,
   useSubmit,
-} from 'react-router-dom';
+} from "react-router-dom";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 // import NavMenu from '../../components/NavMenu/NavMenu';
 // import LoginButton from '../../Auth0ProviderApp/LoginButton';
 // import LogoutButton from '../../Auth0ProviderApp/LogoutButton';
 
-import { useAuth0 } from '@auth0/auth0-react';
+import { useAuth0 } from "@auth0/auth0-react";
 
 export async function action() {
   return null;
@@ -78,6 +78,9 @@ const PrivateLinkItems = function () {
       <li>
         <NavLink to="clock">ClockApp</NavLink>
       </li>
+      {/* <li>
+        <NavLink to="drag-and-drop">DragDrop</NavLink>
+      </li> */}
       <li>
         <NavLink to="class-component-demo">Class Component</NavLink>
       </li>
@@ -93,7 +96,9 @@ const PrivateLinkItems = function () {
       <li>
         <NavLink to="use-transition-demo">useTransition Demo</NavLink>
       </li>
-
+      <li>
+        <NavLink to="use-ref-demo">useRef Demo</NavLink>
+      </li>
       <li>
         <NavLink to="dog-data">DogData</NavLink>
       </li>
@@ -155,9 +160,9 @@ const PrivateLinkItems = function () {
 
 export default function Root() {
   const { user, isAuthenticated, isLoading } = useAuth0();
-  console.log('user:', user);
-  console.log('isAuthenticated:', isAuthenticated);
-  console.log('isLoading:', isLoading);
+  // console.log("user:", user);
+  // console.log("isAuthenticated:", isAuthenticated);
+  // console.log("isLoading:", isLoading);
   return (
     <>
       <div id="sidebar">

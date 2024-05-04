@@ -161,9 +161,9 @@
                 "Sie": "verheiraten",
                 "synonyms": [],
                 "antonyms": [],
-                "notes": "marry"
+                "notes": ""
             },
-            "en": ""
+            "en": "marry"
         },
         {
             "de": {
@@ -242,13 +242,13 @@
         },
         {
             "de": {
-                "base": "",
-                "ich": "",
-                "wir": "",
-                "du": "",
-                "ihr": "",
-                "es": "",
-                "Sie": "",
+                "base": "sprachen",
+                "ich": "sprach",
+                "wir": "sprachen",
+                "du": "sprachst",
+                "ihr": "spracht",
+                "es": "spracht",
+                "Sie": "sprachen",
                 "synonyms": [],
                 "antonyms": [],
                 "notes": ""

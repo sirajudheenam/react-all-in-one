@@ -214,3 +214,9 @@ State Accessibility
 | ------------ | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | UI State     | useState, useReducer,useRef            | 1. ContextAPI + useState/useReducer, 2. Redux, Zustand, Recoil etc., 3. React Router                                                                       |
 | Remote State | fetch + useEffect ,useState/useReducer | 1. ContextAPI + useState/useReducer, 2. Redux, Zustand, Recoil etc., 3.ReactQuery, SWR,RTK Query, etc. (Tools Highly Specialized in handling remote state) |
+
+## Arrow Functions:
+
+```javascript
+
+```
