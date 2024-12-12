@@ -1,28 +1,38 @@
 import { useEffect, useState } from "react";
 import "./DEFlashCard.css";
 function NounCard({ noun }) {
-  noun && console.log("NounCard [noun]:", noun);
+
+  const [hovered, setHovered] = useState(false);
+
+  function handleMouseEnter() {
+    setHovered(true);
+  }
+  function handleMouseLeave() {
+    setHovered(false);
+  }
   return (
     // https://www.material-tailwind.com/docs/html/card
     <div className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
       {noun ? (
         <>
           <div className="p-6">
-            <h5 className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-              {noun?.article} {noun?.word}
+            <h5 className="block mb-2 font-sans text-6xl antialiased font-semibold leading-snug tracking-normal text-blue-950"
+              onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+            >
+              {hovered && noun?.article} {noun?.word}
             </h5>
             <table className="block font-sans text-base antialiased font-bold leading-relaxed text-inherit text-blue-900">
               <tbody>
                 <tr className="m-20">
-                  <td>Plural: -</td>
+                  <td>Plural</td>
                   <td>die {noun?.plural}</td>
                 </tr>
                 <tr className="m-20">
-                  <td>English: - </td>
+                  <td>English </td>
                   <td>{noun?.en}</td>
                 </tr>
                 <tr className="m-20">
-                  <td>Category: -</td>
+                  <td>Category</td>
                   <td>{noun?.category}</td>
                 </tr>
                 <tr className="m-20">

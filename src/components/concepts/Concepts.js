@@ -37,6 +37,7 @@ const reducer = (state, action) => {
       return { ...state, backgroundColor: 'yellow' };
   }
 };
+
 const Concepts = () => {
   // useState
   const [count, setCount] = useState(0);
@@ -47,7 +48,7 @@ const Concepts = () => {
     setCount((prevCount) => prevCount + 1);
   };
 
-  // useEffect renders once every component is rendered on the screen
+  // useEffect executes once every component is rendered on the screen
   useEffect(() => {
     const incrementer = setInterval(() => {
       setCounter((prevCounter) => prevCounter + 1);
@@ -97,12 +98,12 @@ const Concepts = () => {
 
   return (
     <>
-      <div>
-        <h1>Concepts</h1>
+      <div className="bg-grey" >
+        <h1 className='text-blue-950 border-2 bg-yellow-300 p-2 rounded'>Concepts</h1>
       </div>
 
       <div className="concepts-flex-container">
-        <div className="concepts-flex-container-item">
+        <div className="concepts-flex-container-item flex items-center space-around mt-96">
           <button onClick={increment}>Add Counter - [ {count} ]</button>
           <p onClick={increment} style={{ buttonStyle }}>
             Count : {count}
@@ -138,7 +139,7 @@ const Concepts = () => {
           className="concepts-flex-container-item"
         >
           <h5>Reducer Demo</h5>
-          <div>
+          <div className='flex items-center rounded w-96 h-16'>
             <select
               onChange={(e) => dispatch(e.target.value)}
               value={state.backgroundColor}
@@ -160,7 +161,7 @@ const Concepts = () => {
           </span>
         </div>
 
-        <div className="concepts-flex-container-item">
+        <div className="concepts-flex-container-item mb-96">
           <span>[useMemo] rendered value : {renderedValue} </span>
         </div>
       </div>

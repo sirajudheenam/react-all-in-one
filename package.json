@@ -1,5 +1,5 @@
 {
-  "name": "react-demo",
+  "name": "react-all-in-one",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -91,5 +91,6 @@
     "tailwindcss": "^3.3.3",
     "typescript": "^5.2.2",
     "webpack": "^5.88.2"
-  }
+  },
+  "packageManager": "pnpm@9.1.4+sha1.2432063d815cfa88fd9fef1d85a445e3f609851d"
 }
