@@ -218,5 +218,7 @@ State Accessibility
 ## Arrow Functions:
 
 ```javascript
-
+const doSomething = (numberToAdd) => {
+  return numberToAdd + 1;
+}
 ```

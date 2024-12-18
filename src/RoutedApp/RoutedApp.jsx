@@ -134,6 +134,7 @@ import Expenses, {
   action as expensesAction,
 } from "../components/Expenses/App";
 
+import FormHandling from "../components/FormHandling/FormHandling";
 
 import FlashCardApp, {
   loader as flashCardAppLoader,
@@ -428,6 +429,10 @@ const router = createBrowserRouter(
           element={<FlashCardApp />}
           loader={flashCardAppLoader}
           action={flashCardAppAction}
+        />
+        <Route
+          path="form-handling"
+          element={<FormHandling />}
         />
         {/* already done */}
         <Route

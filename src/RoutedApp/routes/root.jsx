@@ -8,12 +8,6 @@ import {
   useSubmit,
 } from "react-router-dom";
 
-import { useEffect, useState } from "react";
-
-// import NavMenu from '../../components/NavMenu/NavMenu';
-// import LoginButton from '../../Auth0ProviderApp/LoginButton';
-// import LogoutButton from '../../Auth0ProviderApp/LogoutButton';
-
 import { useAuth0 } from "@auth0/auth0-react";
 
 export async function action() {
@@ -98,6 +92,9 @@ const PrivateLinkItems = function () {
       </li>
       <li>
         <NavLink to="fetch-api">Fetch API</NavLink>
+      </li>
+      <li>
+        <NavLink to="form-handling">Form Handling</NavLink>
       </li>
       <li>
         <NavLink to="github-fetch">GitHub Fetch</NavLink>
