@@ -2,6 +2,7 @@
   "name": "react-all-in-one",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://technotipstoday.github.io/react-all-in-one",
   "dependencies": {
     "@auth0/auth0-react": "^2.2.1",
     "@blocknote/core": "^0.9.4",
