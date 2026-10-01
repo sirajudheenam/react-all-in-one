@@ -38,10 +38,10 @@ storybook-build:
 	pnpm build-storybook
 
 deploy: build
-	npx gh-pages -d build
+	npx gh-pages -d build -r git@github.com:sirajudheenam/react-all-in-one.git
 
 deploy-pages:
-	npx gh-pages -d build
+	npx gh-pages -d build -r git@github.com:sirajudheenam/react-all-in-one.git
 
 server-de:
 	pnpm de-questions-server

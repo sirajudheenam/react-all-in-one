@@ -2,7 +2,7 @@
 
 A showcase of React concepts, patterns, and mini-apps — built as a learning playground.
 
-**Live site:** https://technotipstoday.github.io/react-all-in-one/
+**Live site:** https://sirajudheenam.github.io/react-all-in-one/
 
 ---
 
@@ -38,7 +38,7 @@ make start
 The app is deployed to the `gh-pages` branch of this repo and served at:
 
 ```
-https://technotipstoday.github.io/react-all-in-one/
+https://sirajudheenam.github.io/react-all-in-one/
 ```
 
 To publish a new version:
