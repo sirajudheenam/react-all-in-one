@@ -4,7 +4,7 @@ import { useDrag, useDrop } from "react-dnd";
 
 const type = "Image"; // Need to pass which type element can be draggable, its a simple string or Symbol. This is like an Unique ID so that the library know what type of element is dragged or dropped on.
 
-const Image = ({ image, index }) => {
+const Image = ({ image, index, moveImage }) => {
     const ref = useRef(null); // Initialize the reference
 
     // useDrop hook is responsible for handling whether any item gets hovered or dropped on the element
@@ -23,6 +23,7 @@ const Image = ({ image, index }) => {
             if (dragIndex === hoverIndex) {
                 return;
             }
+            if (!moveImage) return;
             // If it is dragged around other elements, then move the image and set the state with position changes
             moveImage(dragIndex, hoverIndex);
             /*

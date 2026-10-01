@@ -1,6 +1,7 @@
 // https://blog.logrocket.com/drag-and-drop-react-dnd/
 // https://www.youtube.com/watch?v=Vqa9NMzF3wc - Do this instead
 // Continue
+import { useState } from "react";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import update from "immutability-helper";
@@ -9,7 +10,7 @@ import ImageList from "./ImageList";
 export default function DragDrop() {
   // Replace with set of Images
 
-  const [images, setImages] = ["ABC", "DEF", "GHI"];
+  const [images, setImages] = useState(["ABC", "DEF", "GHI"]);
   const moveImage = (dragIndex, hoverIndex) => {
     // Get the dragged element
     const draggedImage = images[dragIndex];

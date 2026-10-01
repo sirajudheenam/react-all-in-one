@@ -1,0 +1,35 @@
+.layout-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: #1e293b;
+  padding: 0.75rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.layout-nav a {
+  color: #f8fafc;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.layout-nav a:hover {
+  opacity: 1;
+}
+
+.layout-nav .brand {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #7dd3fc;
+  text-decoration: none;
+  opacity: 1;
+  margin-right: auto;
+}
+
+.layout-content {
+  padding: 1.5rem;
+}
