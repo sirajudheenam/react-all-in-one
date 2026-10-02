@@ -2,7 +2,7 @@
     "app": {
         "name": "React-All-In-One",
         "email": "amroinfo (at) gmail.com",
-        "policyUpdatedAt": "2023-Oct-29",
+        "policyUpdatedAt": "2024-Oct-02",
         "social": {
             "youtube": {
                 "channels": [
@@ -23,9 +23,9 @@
         },
         "oauth0": {
             "google": {
-                "hompage": "https://react-aio.technotipstoday.dev",
-                "privacyPolicyLink": "https://react-aio.technotipstoday.dev/privacy",
-                "termsOfServiceLink": "https://react-aio.technotipstoday.dev/terms"
+                "hompage": "https://sirajudheenam.github.io/react-all-in-one/",
+                "privacyPolicyLink": "https://sirajudheenam.github.io/react-all-in-one/#/privacy",
+                "termsOfServiceLink": "https://sirajudheenam.github.io/react-all-in-one/#/terms"
             }
         }
     }
