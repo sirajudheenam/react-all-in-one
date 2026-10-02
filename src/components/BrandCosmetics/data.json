@@ -23,9 +23,9 @@
         },
         "oauth0": {
             "google": {
-                "hompage": "https://sirajudheenam.github.io/react-all-in-one/",
-                "privacyPolicyLink": "https://sirajudheenam.github.io/react-all-in-one/#/privacy",
-                "termsOfServiceLink": "https://sirajudheenam.github.io/react-all-in-one/#/terms"
+                "hompage": "https://react-aio.technotipstoday.dev",
+                "privacyPolicyLink": "https://react-aio.technotipstoday.dev/#/privacy",
+                "termsOfServiceLink": "https://react-aio.technotipstoday.dev/#/terms"
             }
         }
     }
