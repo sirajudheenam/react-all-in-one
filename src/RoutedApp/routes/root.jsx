@@ -1,10 +1,13 @@
 import { Outlet, NavLink } from "react-router-dom";
+import { useTheme } from "../../contexts/themeContext";
 import "./root.css";
 
 export async function action() { return null; }
 export async function loader() { return null; }
 
 export default function Root() {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <>
       <nav id="navbar">
@@ -12,8 +15,20 @@ export default function Root() {
           React <span>All-in-One</span>
         </NavLink>
         <NavLink to="/" className="home-link">Home</NavLink>
+        <button
+          className="theme-toggle"
+          onClick={toggleTheme}
+          aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+          title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+        >
+          <span className="theme-toggle__track">
+            <span className="theme-toggle__thumb" />
+          </span>
+          <span className="theme-toggle__icon theme-toggle__icon--sun">☀</span>
+          <span className="theme-toggle__icon theme-toggle__icon--moon">☾</span>
+        </button>
       </nav>
-      <div id="detail">
+      <div id="detail" className="demo-wrapper">
         <Outlet />
       </div>
     </>
