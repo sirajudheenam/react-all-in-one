@@ -228,6 +228,7 @@ const router = createBrowserRouter(
       action={rootAction}
       errorElement={<ErrorPage />}
     >
+
       <Route errorElement={<ErrorPage />}>
         <Route index element={<Index />} />
 
@@ -491,7 +492,8 @@ const router = createBrowserRouter(
         />
       </Route>
     </Route>
-  )
+  ),
+  { basename: process.env.PUBLIC_URL || "/" }
 );
 
 export const RoutedApp = function () {

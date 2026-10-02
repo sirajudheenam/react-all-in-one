@@ -14,6 +14,16 @@
 
 
     <title>React All-in-One</title>
+    <!-- GitHub Pages SPA: restore path encoded by 404.html -->
+    <script>
+      (function() {
+        var p = window.location.search.slice(1).split('&').filter(function(s){ return s.startsWith('p='); })[0];
+        if (p) {
+          var decoded = decodeURIComponent(p.replace(/^p=/, ''));
+          window.history.replaceState(null, null, '/' + decoded);
+        }
+      })();
+    </script>
   </head>
 
   <!-- Google Analytics -->
