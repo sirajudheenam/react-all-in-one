@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/react-all-in-one/static/css/main.8b89b60f.css",
-    "main.js": "/react-all-in-one/static/js/main.ee4abe2d.js",
+    "main.js": "/react-all-in-one/static/js/main.a928315f.js",
     "static/media/pic-2.jpeg": "/react-all-in-one/static/media/pic-2.3dd3ca5a7d84949d307f.jpeg",
     "static/media/pic-1.jpeg": "/react-all-in-one/static/media/pic-1.1d9bff59e21556a1519e.jpeg",
     "static/media/pic-3.jpeg": "/react-all-in-one/static/media/pic-3.7f13a0620a2fc942b470.jpeg",
     "index.html": "/react-all-in-one/index.html",
     "main.8b89b60f.css.map": "/react-all-in-one/static/css/main.8b89b60f.css.map",
-    "main.ee4abe2d.js.map": "/react-all-in-one/static/js/main.ee4abe2d.js.map"
+    "main.a928315f.js.map": "/react-all-in-one/static/js/main.a928315f.js.map"
   },
   "entrypoints": [
     "static/css/main.8b89b60f.css",
-    "static/js/main.ee4abe2d.js"
+    "static/js/main.a928315f.js"
   ]
 }
