@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-all-in-one/static/css/main.604e152e.css",
-    "main.js": "/react-all-in-one/static/js/main.f848d3b1.js",
+    "main.css": "/react-all-in-one/static/css/main.ace00d36.css",
+    "main.js": "/react-all-in-one/static/js/main.1c3cf72d.js",
     "static/media/pic-2.jpeg": "/react-all-in-one/static/media/pic-2.3dd3ca5a7d84949d307f.jpeg",
     "static/media/pic-1.jpeg": "/react-all-in-one/static/media/pic-1.1d9bff59e21556a1519e.jpeg",
     "static/media/pic-3.jpeg": "/react-all-in-one/static/media/pic-3.7f13a0620a2fc942b470.jpeg",
     "index.html": "/react-all-in-one/index.html",
-    "main.604e152e.css.map": "/react-all-in-one/static/css/main.604e152e.css.map",
-    "main.f848d3b1.js.map": "/react-all-in-one/static/js/main.f848d3b1.js.map"
+    "main.ace00d36.css.map": "/react-all-in-one/static/css/main.ace00d36.css.map",
+    "main.1c3cf72d.js.map": "/react-all-in-one/static/js/main.1c3cf72d.js.map"
   },
   "entrypoints": [
-    "static/css/main.604e152e.css",
-    "static/js/main.f848d3b1.js"
+    "static/css/main.ace00d36.css",
+    "static/js/main.1c3cf72d.js"
   ]
 }
