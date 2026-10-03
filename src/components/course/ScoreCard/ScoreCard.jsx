@@ -112,6 +112,11 @@ function Skill({ skill, level, color }) {
 function ScoreCard({ login }) {
   return (
     <div className="div-html">
+      <header className="demo-header">
+        <div className="demo-header__badge">Props · useEffect</div>
+        <h1 className="demo-header__title">Score Card / Dev Profile</h1>
+        <p className="demo-header__desc">Developer profile card using props to compose Avatar, Intro, and SkillList components with GitHub API data.</p>
+      </header>
       <div className="div-body">
         <div className="card">
           <Avatar login={login} />

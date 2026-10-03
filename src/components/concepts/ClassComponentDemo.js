@@ -51,6 +51,11 @@ class Vehicle extends React.Component {
     };
     return (
       <div className="component">
+        <header className="demo-header">
+          <div className="demo-header__badge">Class Component</div>
+          <h1 className="demo-header__title">Class Component Demo</h1>
+          <p className="demo-header__desc">Shows the lifecycle and state patterns of a class-based React component for comparison with hooks.</p>
+        </header>
         <h1 style={myStyle}>Class Component Demo</h1>
         <label htmlFor="color">Color:</label>
         <input id="color" type="text" value="enjoy" style={myColor} />

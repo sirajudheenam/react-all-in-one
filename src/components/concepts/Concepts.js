@@ -98,6 +98,11 @@ const Concepts = () => {
 
   return (
     <>
+      <header className="demo-header">
+        <div className="demo-header__badge">Core Concepts</div>
+        <h1 className="demo-header__title">React Core Concepts</h1>
+        <p className="demo-header__desc">An overview of fundamental React concepts: useState, useEffect, useRef, useMemo, useReducer, and useLayoutEffect.</p>
+      </header>
       <div className="bg-grey" >
         <h1 className='text-blue-950 border-2 bg-yellow-300 p-2 rounded'>Concepts</h1>
       </div>

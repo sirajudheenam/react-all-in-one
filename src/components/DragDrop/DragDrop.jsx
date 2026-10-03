@@ -32,12 +32,16 @@ export default function DragDrop() {
   // We will pass this function to ImageList and then to Image -> Quite a bit of props drilling, the code can be refactored and place all the state management in ImageList itself to avoid props drilling. It's an exercise for you :)
 
   return (
-    <DndProvider backend={HTML5Backend}>
-      <ImageList images={images} moveImage={moveImage} />
-      <div>
-        <h1>Drag Drop</h1>
-      </div>
-    </DndProvider>
+    <div>
+      <header className="demo-header">
+        <div className="demo-header__badge">react-dnd</div>
+        <h1 className="demo-header__title">Drag &amp; Drop</h1>
+        <p className="demo-header__desc">Demonstrates drag-and-drop reordering with react-dnd and immutability-helper for immutable state updates.</p>
+      </header>
+      <DndProvider backend={HTML5Backend}>
+        <ImageList images={images} moveImage={moveImage} />
+      </DndProvider>
+    </div>
   );
 
   // return <div>Hello Drag & Drop</div>;

@@ -11,5 +11,14 @@ export async function loader({ request }) {
 }
 
 export default function Expenses() {
-    return <Main />;
+    return (
+        <div>
+            <header className="demo-header">
+                <div className="demo-header__badge">CRUD · useState</div>
+                <h1 className="demo-header__title">Expenses Tracker</h1>
+                <p className="demo-header__desc">Full CRUD expense tracking app demonstrating component composition, lifting state up, and controlled forms.</p>
+            </header>
+            <Main />
+        </div>
+    );
 }

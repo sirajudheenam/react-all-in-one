@@ -84,6 +84,11 @@ export default function FlashCardApp() {
 
   return (
     <div className="FlashCardApp">
+      <header className="demo-header">
+        <div className="demo-header__badge">Flash Cards</div>
+        <h1 className="demo-header__title">German Flash Card App</h1>
+        <p className="demo-header__desc">Interactive flash cards for learning German nouns and verbs, using useState and useEffect for data loading.</p>
+      </header>
       <select className="" onChange={(e) => handleOptionChange(e)} value={currentCardTheme}>
         <option value="nouns">Nouns</option>
         <option value="verbs">Verbs</option>

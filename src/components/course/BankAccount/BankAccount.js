@@ -130,6 +130,11 @@ export default function BankAccountApp() {
 
   return (
     <div className={styles.BankAccountApp}>
+      <header className="demo-header">
+        <div className="demo-header__badge">useReducer</div>
+        <h1 className="demo-header__title">Bank Account</h1>
+        <p className="demo-header__desc">Models a bank account with multiple state transitions (deposit, withdraw, loan) using useReducer.</p>
+      </header>
       <h1>Bank Account - useReducer</h1>
       <h3 className={styles.balance}>
         Balance: {balance} Loan: {loan}{' '}

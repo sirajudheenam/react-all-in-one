@@ -28,6 +28,11 @@ export async function loader({ request }) {
 export default function App() {
   return (
     <div>
+      <header className="demo-header">
+        <div className="demo-header__badge">useState</div>
+        <h1 className="demo-header__title">Accordion</h1>
+        <p className="demo-header__desc">Demonstrates useState to toggle open/closed state on collapsible FAQ panels.</p>
+      </header>
       <Accordion data={faqs} />
     </div>
   );

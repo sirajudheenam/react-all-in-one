@@ -3,6 +3,11 @@ import React, { useState } from 'react';
 export default function TipNSplit() {
   return (
     <div>
+      <header className="demo-header">
+        <div className="demo-header__badge">Lifting State · Props</div>
+        <h1 className="demo-header__title">Tip &amp; Split Calculator</h1>
+        <p className="demo-header__desc">Tip calculator that demonstrates lifting state up to a parent and passing handlers as props to child components.</p>
+      </header>
       <TipCalculator />
     </div>
   );

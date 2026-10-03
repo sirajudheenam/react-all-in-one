@@ -95,6 +95,11 @@ export default function App() {
 
   return (
     <>
+      <header className="demo-header">
+        <div className="demo-header__badge">useEffect · Custom Hooks</div>
+        <h1 className="demo-header__title">usePopcorn</h1>
+        <p className="demo-header__desc">Movie search and watchlist app demonstrating useEffect, custom hooks, localStorage persistence, and cleanup functions.</p>
+      </header>
       <NavBar>
         <Search query={query} setQuery={setQuery} />
         <NumResults movies={movies} />

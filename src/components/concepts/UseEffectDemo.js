@@ -78,6 +78,11 @@ function UseEffectDemo() {
   return (
     <>
       <div className="use-effect-demo">
+        <header className="demo-header">
+          <div className="demo-header__badge">useEffect</div>
+          <h1 className="demo-header__title">useEffect Demo</h1>
+          <p className="demo-header__desc">Explores useEffect dependencies, cleanup functions, and common side-effect patterns.</p>
+        </header>
         <h1>
           Current emotion is {emotion} and {secondary}
         </h1>

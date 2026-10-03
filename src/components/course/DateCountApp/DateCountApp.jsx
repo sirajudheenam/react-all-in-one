@@ -15,6 +15,7 @@ const DateCountApp = () => {
   const date = new Date();
   date.setDate(date.getDate() + count);
 
+  // eslint-disable-next-line no-unused-vars
   const style = {
     backgroundColor: '#edc84b',
     fontFamily: ['IBM Plex Mono', 'sans-serif'],
@@ -30,7 +31,12 @@ const DateCountApp = () => {
     setCount(0);
   }
   return (
-    <div style={style}>
+    <div>
+      <header className="demo-header">
+        <div className="demo-header__badge">useState</div>
+        <h1 className="demo-header__title">Date Counter</h1>
+        <p className="demo-header__desc">A step-based date counter showing how useState drives derived UI values without extra state.</p>
+      </header>
       <div>
         <button onClick={() => setStep((s) => s - 1)}>-</button>
         <span>Step : {step}</span>

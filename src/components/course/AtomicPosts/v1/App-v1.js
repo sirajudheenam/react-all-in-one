@@ -25,6 +25,11 @@ function App() {
 
   return (
     <section className={styles.atomicSection}>
+      <header className="demo-header">
+        <div className="demo-header__badge">useContext</div>
+        <h1 className="demo-header__title">Atomic Blog</h1>
+        <p className="demo-header__desc">A blog app where posts and search are shared via React Context, avoiding prop drilling.</p>
+      </header>
       <Button setIsFakeDark={setIsFakeDark}>{isFakeDark ? '☀️' : '🌙'}</Button>
       {/*  2) PROVIDE VALUE TO CHILD COMPONENTS */}
       <PostProvider>

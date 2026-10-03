@@ -23,6 +23,11 @@ export default function FetchAPI() {
 
   return (
     <>
+      <header className="demo-header">
+        <div className="demo-header__badge">fetch · useEffect</div>
+        <h1 className="demo-header__title">Fetch API Demo</h1>
+        <p className="demo-header__desc">Demonstrates fetching data from a public REST API and rendering results dynamically.</p>
+      </header>
       Using Fetch <br />
       <button onClick={apiGet}>Fetch data</button>
       {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}

@@ -68,6 +68,11 @@ export default function DogData() {
 
   return (
     <div className="dog-data">
+      <header className="demo-header">
+        <div className="demo-header__badge">useEffect · fetch</div>
+        <h1 className="demo-header__title">Dog Breed Gallery</h1>
+        <p className="demo-header__desc">Loads all dog breeds from the Dog CEO API and fetches breed images on selection.</p>
+      </header>
       <h1 className="text-8xl font-bold uppercase">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500">
           Dog Data using{' '}

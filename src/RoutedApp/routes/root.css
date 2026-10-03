@@ -153,12 +153,98 @@ body {
 [data-theme="light"] .theme-toggle__icon--sun  { opacity: 1; }
 [data-theme="light"] .theme-toggle__icon--moon { opacity: 0.35; }
 
-/* ── Demo wrapper ──────────────────────────────────────────────── */
+/* ── Demo structure outlines ───────────────────────────────────────
+   Faint border on every div/section/article inside a demo so the
+   component tree is visible. Excluded: navbar, home grid, modals,
+   pure layout wrappers (html/body/root/detail). Hover highlights
+   the hovered element one shade brighter for easy inspection.    */
+
+#detail div,
+#detail section,
+#detail article,
+#detail aside,
+#detail form,
+#detail ul,
+#detail ol,
+#detail table {
+  outline: 1px solid rgba(99, 102, 241, 0.12);
+  border-radius: 4px;
+}
+
+#detail div:hover,
+#detail section:hover,
+#detail article:hover,
+#detail aside:hover,
+#detail form:hover {
+  outline-color: rgba(99, 102, 241, 0.35);
+}
+
+/* Don't outline things that are purely decorative or already bordered */
+#detail img,
+#detail input,
+#detail button,
+#detail select,
+#detail textarea,
+#detail label,
+#detail span,
+#detail p,
+#detail h1,
+#detail h2,
+#detail h3,
+#detail h4,
+#detail li {
+  outline: none;
+}
+
+
 .demo-wrapper {
   background: var(--bg);
   color: var(--text);
   min-height: calc(100vh - 56px);
   transition: background 0.25s, color 0.25s;
+}
+
+/* Centre every demo's root element inside the detail pane.
+   max-width keeps wide layouts readable; auto margins centre them.
+   Components that intentionally go full-width (UsePopcorn, ReactQuiz)
+   override this with their own wrapper width. */
+#detail > * {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Full-width overrides for apps that need it */
+#detail > .app,
+#detail > .popcorn-app,
+#detail > .quiz-app,
+#detail > .atomic-posts,
+#detail > .expenses-app,
+#detail > .redux-demo,
+#detail > .dog-data,
+#detail > .pizza,
+#detail > [class*="app"],
+#detail > [class*="App"] {
+  max-width: 960px;
+}
+
+/* Modals and overlays that emerge on interaction must stay
+   within the viewport and not overflow the content pane */
+.modal,
+.overlay,
+[role="dialog"],
+[class*="modal"],
+[class*="Modal"],
+[class*="overlay"],
+[class*="Overlay"] {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  max-width: min(90vw, 560px) !important;
+  max-height: 85vh !important;
+  overflow-y: auto !important;
+  z-index: 500 !important;
 }
 
 /* ── Home: hero ────────────────────────────────────────────────── */
@@ -270,3 +356,96 @@ body {
 }
 #error-page h1 { font-size: 1.5rem; color: var(--text); }
 #error-page p  { color: var(--muted); }
+
+/* ── 3D card lift on home grid ─────────────────────────────────── */
+.card-grid {
+  perspective: 1200px;
+}
+
+.demo-card {
+  transform-style: preserve-3d;
+  transition: border-color 0.2s, transform 0.2s cubic-bezier(.34,1.56,.64,1),
+              box-shadow 0.2s, background 0.25s;
+}
+
+.demo-card:hover {
+  transform: translateY(-4px) rotateX(3deg) rotateY(-1deg);
+  box-shadow: 0 20px 40px var(--shadow-card), 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* 3D press effect on buttons inside demos */
+#detail button {
+  transform-style: preserve-3d;
+  transition: transform 0.12s cubic-bezier(.34,1.56,.64,1), box-shadow 0.12s, background 0.15s;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.25), 0 6px 12px rgba(0,0,0,0.15);
+}
+#detail button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 rgba(0,0,0,0.25), 0 10px 20px rgba(0,0,0,0.2);
+}
+#detail button:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.25), 0 2px 4px rgba(0,0,0,0.15);
+}
+
+/* 3D surface cards inside demos */
+#detail > * {
+  transform-style: preserve-3d;
+}
+
+/* Floating depth on demo-header */
+.demo-header {
+  position: relative;
+}
+.demo-header__badge {
+  box-shadow: 0 2px 8px rgba(99,102,241,0.2);
+}
+
+/* 3D flip on flash cards */
+.flash-card,
+[class*="flash"],
+[class*="Flash"],
+[class*="card"]:not(.demo-card):not(#navbar *) {
+  transition: transform 0.35s cubic-bezier(.34,1.56,.64,1), box-shadow 0.2s;
+}
+.flash-card:hover,
+[class*="flash"]:hover,
+[class*="Flash"]:hover {
+  transform: perspective(600px) rotateY(8deg) translateY(-3px);
+  box-shadow: -8px 12px 24px rgba(0,0,0,0.3);
+}
+
+
+.demo-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.demo-header__badge {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 0.2rem 0.65rem;
+  background: rgba(99,102,241,0.15);
+  color: var(--accent2);
+  border: 1px solid rgba(99,102,241,0.3);
+  border-radius: 99px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.demo-header__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+.demo-header__desc {
+  font-size: 0.875rem;
+  color: var(--muted);
+  max-width: 600px;
+  line-height: 1.6;
+}

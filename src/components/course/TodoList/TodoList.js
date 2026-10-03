@@ -22,7 +22,13 @@ export function TodoList({ todos, tab }) {
   );
 
   return (
-    <ul>
+    <div>
+      <header className="demo-header">
+        <div className="demo-header__badge">useMemo</div>
+        <h1 className="demo-header__title">Todo List with useMemo</h1>
+        <p className="demo-header__desc">Demonstrates useMemo to memoize expensive list filtering so it only re-runs when todos or the active tab changes.</p>
+      </header>
+      <ul>
       {visibleTodos &&
         visibleTodos.map((todo) => (
           <li key={todo.id}>
@@ -48,6 +54,7 @@ export function TodoList({ todos, tab }) {
           </li>
         ))}
     </ul>
+    </div>
   );
 }
 

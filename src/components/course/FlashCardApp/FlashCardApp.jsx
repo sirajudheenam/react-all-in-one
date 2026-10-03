@@ -10,6 +10,11 @@ export async function loader({ request }) {
 export default function FlashCardApp() {
   return (
     <div className="App">
+      <header className="demo-header">
+        <div className="demo-header__badge">useState</div>
+        <h1 className="demo-header__title">Flash Card App</h1>
+        <p className="demo-header__desc">Click a card to reveal the answer — shows simple toggle state and conditional rendering.</p>
+      </header>
       <FlashCards />
     </div>
   );

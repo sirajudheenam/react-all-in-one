@@ -36,6 +36,11 @@ export default function TravelList() {
         <div className="div-html">
           <div className="div-body">
             <div className="app">
+              <header className="demo-header">
+                <div className="demo-header__badge">useState · derived state</div>
+                <h1 className="demo-header__title">Travel Packing List</h1>
+                <p className="demo-header__desc">Add, check off, and sort packing items — demonstrates list state, filtering, and sorting as derived data.</p>
+              </header>
               <Logo />
               <Form onAddItems={handleAddItems} />
               <PackingList

@@ -26,6 +26,11 @@ export default function Advice() {
 
   return (
     <div className="advice-container">
+      <header className="demo-header">
+        <div className="demo-header__badge">useEffect · fetch</div>
+        <h1 className="demo-header__title">Advice Slip</h1>
+        <p className="demo-header__desc">Fetches a random piece of advice from a public API on mount and on demand using useEffect.</p>
+      </header>
       <p className="advice-label">Advice #{count}</p>
       <p className="advice-text">{advice}</p>
       <button className="advice-btn" onClick={getAdvice}>Get new advice</button>

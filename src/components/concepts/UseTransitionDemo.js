@@ -51,6 +51,11 @@ const UseTransitionDemo = () => {
   return (
     <>
       <div className="App">
+        <header className="demo-header">
+          <div className="demo-header__badge">useTransition</div>
+          <h1 className="demo-header__title">useTransition Demo</h1>
+          <p className="demo-header__desc">Marks expensive state updates as non-urgent with useTransition to keep the UI responsive.</p>
+        </header>
         <input onChange={handleChange} type="text" value={input} />
         {isPending && 'Loading...'}
         {filteredPokemon.map((poke) => (

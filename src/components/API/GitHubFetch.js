@@ -35,6 +35,11 @@ export default function GitHubFetch({ login }) {
   } else {
     return (
       <div className="component">
+        <header className="demo-header">
+          <div className="demo-header__badge">fetch · useEffect</div>
+          <h1 className="demo-header__title">GitHub Profile Fetch</h1>
+          <p className="demo-header__desc">Fetches a GitHub user profile and repositories using the GitHub REST API.</p>
+        </header>
         <h1>{data.name}</h1>
         <p>{data.location}</p>
         <img alt={data.login} src={data.avatar_url} height={200} />

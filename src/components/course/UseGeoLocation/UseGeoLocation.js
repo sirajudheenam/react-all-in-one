@@ -36,6 +36,11 @@ export default function GPSApp() {
 
   return (
     <div>
+      <header className="demo-header">
+        <div className="demo-header__badge">Browser API · useState</div>
+        <h1 className="demo-header__title">Geolocation Demo</h1>
+        <p className="demo-header__desc">Uses the browser Geolocation API with useState to asynchronously fetch and display the user's GPS coordinates.</p>
+      </header>
       <button onClick={getPosition} disabled={isLoading}>
         Get my position
       </button>

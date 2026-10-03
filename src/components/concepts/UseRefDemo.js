@@ -253,6 +253,11 @@ function VideoPlayerTwoWrapper() {
 export default function useRefDemo() {
   return (
     <div className="useRefWrapper">
+      <header className="demo-header">
+        <div className="demo-header__badge">useRef</div>
+        <h1 className="demo-header__title">useRef Demo</h1>
+        <p className="demo-header__desc">Demonstrates useRef for DOM access and persisting values across renders without causing re-renders.</p>
+      </header>
       <RefSameComponent />
       <RefDiffComponent />
       <CatFriends />

@@ -30,6 +30,11 @@ const BlockNote = () => {
   return (
     <>
       <div className="blocknote-container">
+        <header className="demo-header">
+          <div className="demo-header__badge">Rich Text Editor</div>
+          <h1 className="demo-header__title">BlockNote Editor</h1>
+          <p className="demo-header__desc">Integrates the BlockNote rich-text editor library into React, showing third-party component integration and controlled theming.</p>
+        </header>
         <div className="blocknote-header-flex-container">
           <div className="blocknote-header-flex-item-1">
             <h1>BlockNote</h1>

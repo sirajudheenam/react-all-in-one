@@ -35,6 +35,11 @@ function ConditionalRendering({ authorized, day }) {
   // }
   return (
     <div className="ConditionalRendering">
+      <header className="demo-header">
+        <div className="demo-header__badge">Conditional Rendering</div>
+        <h1 className="demo-header__title">Conditional Rendering</h1>
+        <p className="demo-header__desc">Shows multiple patterns for conditionally rendering JSX: &&, ternary, and early return.</p>
+      </header>
       {authorized ? <SecretComponent /> : <RegularComponent />}
       {/* { props.authorized ? <SecretComponent /> : <RegularComponent /> } */}
       {/* { day ? <DayComponent /> : <NightComponent />} */}

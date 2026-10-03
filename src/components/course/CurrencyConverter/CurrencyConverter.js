@@ -33,6 +33,11 @@ export default function CurrencyConverter() {
 
   return (
     <div className="App">
+      <header className="demo-header">
+        <div className="demo-header__badge">useEffect · fetch</div>
+        <h1 className="demo-header__title">Currency Converter</h1>
+        <p className="demo-header__desc">Fetches live exchange rates and converts between currencies, demonstrating side effects and controlled inputs.</p>
+      </header>
       <input
         type="text"
         value={amount}

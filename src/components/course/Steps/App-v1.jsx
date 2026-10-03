@@ -17,7 +17,11 @@ export async function loader({ request }) {
 export default function App() {
   return (
     <div>
-      <div>Steps App v1</div>
+      <header className="demo-header">
+        <div className="demo-header__badge">useState</div>
+        <h1 className="demo-header__title">Steps Wizard</h1>
+        <p className="demo-header__desc">A multi-step wizard controlled entirely by useState — shows how state drives navigation.</p>
+      </header>
       <Steps />
       <StepMessage step={1}>
         <p>Pass in content</p>

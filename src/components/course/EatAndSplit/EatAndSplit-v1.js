@@ -72,6 +72,11 @@ export default function App() {
   return (
     <div className="eat-n-split-body">
       <div className="eat-n-split-app">
+        <header className="demo-header">
+          <div className="demo-header__badge">useState · lifting state</div>
+          <h1 className="demo-header__title">Eat and Split</h1>
+          <p className="demo-header__desc">Split a restaurant bill between friends — demonstrates lifting state up and controlled forms.</p>
+        </header>
         <div className="eat-and-split-sidebar">
           <FriendsList
             friends={friends}
