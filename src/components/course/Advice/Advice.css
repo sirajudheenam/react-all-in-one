@@ -1,0 +1,56 @@
+.advice-container {
+  max-width: 520px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.advice-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent2);
+}
+
+.advice-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 3.5rem;
+}
+
+.advice-text::before,
+.advice-text::after {
+  content: '"';
+  color: var(--accent);
+  font-size: 1.4rem;
+}
+
+.advice-btn {
+  align-self: center;
+  padding: 0.6rem 1.6rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+.advice-btn:hover { background: var(--accent2); transform: translateY(-1px); }
+.advice-btn:active { transform: translateY(0); }
+
+.advice-count {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.advice-count strong { color: var(--text); }

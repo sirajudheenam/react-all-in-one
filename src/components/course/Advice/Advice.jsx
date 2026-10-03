@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import './Advice.css';
 
 export async function action() {
   return null;
@@ -13,7 +14,7 @@ export default function Advice() {
   const [count, setCount] = useState(0);
 
   async function getAdvice() {
-    const response = await fetch('https://api.adviceslip.com/advice');
+    const response = await fetch(`https://api.adviceslip.com/advice?t=${Date.now()}`);
     const data = await response.json();
     setAdvice(data.slip.advice);
     setCount((c) => c + 1);
@@ -24,9 +25,10 @@ export default function Advice() {
   }, []);
 
   return (
-    <div>
-      <h1>{advice}</h1>
-      <button onClick={getAdvice}>GetAdvice</button>
+    <div className="advice-container">
+      <p className="advice-label">Advice #{count}</p>
+      <p className="advice-text">{advice}</p>
+      <button className="advice-btn" onClick={getAdvice}>Get new advice</button>
       <Message count={count} />
     </div>
   );
@@ -34,10 +36,8 @@ export default function Advice() {
 
 function Message({ count }) {
   return (
-    <div>
-      <p>
-        You have read so far <strong>{count}</strong> times our advice.
-      </p>
-    </div>
+    <p className="advice-count">
+      You have read <strong>{count}</strong> piece{count !== 1 ? 's' : ''} of advice.
+    </p>
   );
 }

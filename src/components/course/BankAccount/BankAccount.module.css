@@ -1,56 +1,78 @@
 .BankAccountApp {
-    display: flex;
-    flex-direction: column;
-    font-family: sans-serif;
-    text-align: center;
-    background-color: rgba(164, 152, 241, 0.8);
-    border: .2rem solid grey;
-    border-radius: .8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-family: inherit;
+  text-align: center;
+}
 
+.BankAccountApp h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
 }
 
 .BankAccountFlexContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 2rem;
-    justify-content: center;
-    border: .2rem solid grey;
-    border-radius: .8rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  width: 100%;
 }
 
 .BankAccountFlexItem {
-    align-self: center;
+  align-self: center;
 }
 
 .BankAccountApp button {
-    margin: 1rem;
-    padding: 1rem;
-    background: linear-gradient(45deg, red, orange);
-    /*
-        linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
-        linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
-        linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
-    */
-    color: black;
+  padding: 0.5rem 1.1rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.15s, background 0.15s;
+}
+
+.BankAccountApp button:hover:not(:disabled) {
+  background: var(--accent2);
 }
 
 .BankAccountApp button:disabled {
-    margin: 1rem;
-    padding: 1rem;
-    background: transparent;
-    color: black;
+  background: var(--surface2);
+  color: var(--muted);
+  cursor: not-allowed;
+  border: 1px solid var(--border);
 }
 
 .BankAccountApp .message {
-    color: rgb(37, 33, 33);
+  color: var(--text);
+  font-size: 0.9rem;
 }
 
 .BankAccountApp .error {
-    color: rgb(74, 5, 5);
+  color: #f87171;
+  font-size: 0.85rem;
 }
 
 .BankAccountApp .balance {
-    background-color: bisque;
-    color: blue;
+  padding: 0.75rem 1.5rem;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--accent2);
+  font-size: 1.3rem;
+  font-weight: 700;
+  width: 100%;
 }

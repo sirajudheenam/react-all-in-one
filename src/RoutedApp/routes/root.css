@@ -81,7 +81,7 @@ body {
 }
 #navbar .brand span { color: var(--accent); }
 
-#navbar a.home-link {
+#navbar a.back-link {
   font-size: 0.8rem;
   font-weight: 500;
   color: var(--muted);
@@ -90,8 +90,9 @@ body {
   border-radius: 6px;
   border: 1px solid var(--border);
   transition: color 0.15s, border-color 0.15s, background 0.15s;
+  white-space: nowrap;
 }
-#navbar a.home-link:hover {
+#navbar a.back-link:hover {
   color: var(--text);
   border-color: var(--accent);
   background: rgba(99, 102, 241, 0.08);

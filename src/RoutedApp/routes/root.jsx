@@ -1,4 +1,4 @@
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink, useLocation } from "react-router-dom";
 import { useTheme } from "../../contexts/themeContext";
 import "./root.css";
 
@@ -7,6 +7,8 @@ export async function loader() { return null; }
 
 export default function Root() {
   const { theme, toggleTheme } = useTheme();
+  const { pathname } = useLocation();
+  const isHome = pathname === "/";
 
   return (
     <>
@@ -14,7 +16,11 @@ export default function Root() {
         <NavLink to="/" className="brand">
           React <span>All-in-One</span>
         </NavLink>
-        <NavLink to="/" className="home-link">Home</NavLink>
+        {!isHome && (
+          <NavLink to="/" className="back-link" aria-label="Back to home">
+            ← Home
+          </NavLink>
+        )}
         <button
           className="theme-toggle"
           onClick={toggleTheme}
