@@ -1,76 +1,69 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
 .dog-data {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    border: .2rem solid rgb(206, 194, 194) !important;
-    border-radius: 1rem !important;
-    background: rgb(237, 237, 228) !important;
-    border: .3rem solid #e3ebda;
-    border-radius: .5rem;
-    box-shadow: -5px 10px 10px 10px rgb(221, 157, 157);
-
-    /* outline: dashed 1px black; */
-    /* Center child horizontally*/
-    justify-content: center;
+  font-family: system-ui, -apple-system, sans-serif;
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 1.5rem;
+  color: var(--text);
 }
 
 .imageWrapper {
-    display: flex;
+  display: flex;
+  align-items: center;
 }
 
-.previousButton {
-    flex: 2%;
+.previousButton,
+.nextButton {
+  flex: 0 0 auto;
+  padding: 0.5rem 1rem;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.previousButton:hover,
+.nextButton:hover {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
 }
 
 .ImageArea {
-    flex: 96%;
-}
-
-.nextButton {
-    flex: 2%;
+  flex: 1;
 }
 
 .dog-data img {
-    border-radius: 8px;
-    /* Oval Shape*/
-    /* border-radius: 50%; */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-    /* max-height: 450px;
-    max-width: 700px; */
-    max-height: 90%;
-    max-width: 90%;
-
-    /* height: 90%;
-    width: 90%; */
-
-    /* fill cover contain scale-down */
-    object-fit: scale-down;
-
-
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+  max-height: 400px;
+  max-width: 90%;
+  object-fit: scale-down;
 }
 
 .dog-data .btn {
-    background: orange;
-    /* align-items: left; */
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background 0.15s;
 }
 
 .dog-data .btn:hover {
-
-    background: yellow;
+  background: var(--accent2);
 }
 
 .dog-data table tr td {
-    /* font-size: 2rem !important; */
-    color: green;
-    border: #392899;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  color: var(--text);
+  text-align: center;
+  padding: 0.4rem 0.75rem;
+  border-bottom: 1px solid var(--border);
 }

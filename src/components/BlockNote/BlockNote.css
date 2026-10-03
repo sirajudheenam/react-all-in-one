@@ -1,88 +1,65 @@
 .blocknote-container {
-    height: 98%;
-    width: 98%;
-    background: lightyellow;
-    border: .2rem solid grey;
-    border-radius: .5rem;
-    box-shadow: .2rem .2rem .2rem .2rem rgb(14, 0, 0);
+  height: 98%;
+  width: 98%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 
 .blocknote-header-flex-container {
-    display: flex;
-    flex: 0;
-
-    flex-direction: row;
-    /* align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe; */
-    align-items: baseline;
-    /*   justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe; */
-    justify-content: space-evenly;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface2);
 }
 
 .blocknote-header-flex-item-1 {
-    order: 1;
-
-    /* margin-left: auto;
-    margin-right: auto; */
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 2rem;
-    /* flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
-    /* flex-grow: 1; */
-
-    color: orange;
-    background: transparent;
-
-    border: .2rem solid grey;
-    border-radius: 1rem;
-    box-shadow: .2rem .2rem .2rem .2rem rgb(14, 0, 0);
-
+  order: 1;
+  padding: 0.5rem 1rem;
+  color: var(--accent2);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: background 0.15s, color 0.15s;
 }
 
 .blocknote-header-flex-item-1:hover {
-    background: grey;
-    color: blue;
-    border: .2rem solid grey;
-    border-radius: 1rem;
-    box-shadow: .2rem .2rem .1rem .2rem rgb(79, 23, 23);
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--accent);
 }
 
 .blocknote-header-flex-item-2 {
-    order: 2;
-
-    /* background: yellow;
-    border: .2rem solid grey;
-    border-radius: .5rem;
-    box-shadow: .2rem .2rem .2rem .2rem rgb(14, 0, 0); */
+  order: 2;
 }
 
 .blocknote-header-flex-item-3 {
-    order: 3;
-
-    /* align-self: auto | flex-start | flex-end | center | baseline | stretch; */
-    align-self: center;
-
-    /* background: orange;
-    border: .2rem solid grey;
-    border-radius: .5rem;
-    box-shadow: .2rem .2rem .2rem .2rem rgb(14, 0, 0); */
+  order: 3;
+  align-self: center;
 }
-
 
 .tooltip {
-    visibility: hidden;
+  visibility: hidden;
 }
 
-.tooltip-hover:hover+.tooltip {
-    /* Uses the adjacent sibling selector */
-    visibility: visible;
-    /* Or display: block */
+.tooltip-hover:hover + .tooltip {
+  visibility: visible;
 }
 
 .blocknote-container h1 {
-    text-align: center;
+  text-align: center;
+  color: var(--text);
+  font-size: 1.1rem;
+  margin: 0;
 }
 
 .blocknote-container h6 {
-    text-align: center;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.75rem;
+  margin: 0;
 }

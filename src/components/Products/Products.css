@@ -1,44 +1,21 @@
-* {
-    /* font-size: 62.5%; */
-}
-
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: larger;
-    background: rgb(240, 244, 244);
-}
-
 .products {
-    display: flex-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-height: 10rem;
+  width: 100%;
+  max-width: 38rem;
+  font-size: 0.95rem;
+  margin: 1rem auto;
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  box-shadow: 0 4px 16px var(--shadow-card);
+  transition: border-color 0.2s;
+}
 
-    height: 25rem;
-    width: 40rem;
-
-    font-size: 20px;
-
-    margin: 1.5rem;
-    padding: 1.5rem;
-
-    /* border: .1rem solid; */
-    border-radius: 2rem;
-
-    background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
-        linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
-        linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
-    /* box-shadow: 10px 5px 5px red; */
-    /* box-shadow: revert; */
-    /* box-shadow:
-        3px 3px red,
-        -1em 0 0.4em olive; */
-
-    /* offset-x | offset-y | blur-radius | spread-radius | color */
-    /* box-shadow: 2px 2px 2px 2px rgba(207, 78, 78, 0.2); */
-    /* offset-x | offset-y | color */
-    /* box-shadow: 6px 6px teal; */
-
-    box-shadow:
-        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-        0 0 0 2px rgb(255, 255, 255),
-        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-
+.products:hover {
+  border-color: var(--accent);
 }

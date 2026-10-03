@@ -1,25 +1,10 @@
-/* score_card.css */
-/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
-score-body {
-  font-family: 'IBM Plex Mono', sans-serif;
-  background-color: #f7f7f7;
-}
-
-h1 {
-  margin-bottom: 12px;
-}
-
 .card {
-  width: 450px;
-  margin: 40px;
-  border: 4px solid #222;
+  width: 420px;
+  margin: 2rem auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  overflow: hidden;
 }
 
 .card::after {
@@ -33,23 +18,40 @@ h1 {
 }
 
 .data {
-  padding: 32px;
-  padding-top: 24px;
+  padding: 1.5rem;
+  padding-top: 1.2rem;
+}
+
+.data h1 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.data p {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
 }
 
 .skill-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 16px;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }
 
 .skill {
-  padding: 2px 12px;
-  border-radius: 5px;
+  padding: 0.25rem 0.75rem;
+  border-radius: 99px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.4rem;
   font-weight: 500;
+  font-size: 0.8rem;
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  color: var(--text);
 }

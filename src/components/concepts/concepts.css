@@ -1,32 +1,21 @@
 .concepts-flex-container {
-  /* flex */
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
-  gap: 2rem;
-
-  /* for row direction */
-  /* align-items: baseline; */
-  justify-content: space-around;
-  /* flex */
-
-  margin-left: auto;
-  margin-right: auto;
-  background: rgb(229, 229, 235);
-  border: .3rem solid #e3ebda;
-  border-radius: .5rem;
-  box-shadow: -5px .5rem .5rem .5rem rgb(205, 187, 187);
-
-  align-items: normal;
+  gap: 1.5rem;
   justify-content: center;
+  margin: 0 auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  align-items: normal;
 }
 
 .concepts-flex-container-item {
   align-self: baseline;
-  margin-right: auto;
-  margin-left: auto;
-  background: rgb(229, 229, 235);
-  border: .3rem solid #e3ebda;
-  border-radius: .5rem;
-  box-shadow: -5px .5rem .5rem .5rem rgb(205, 187, 187);
+  margin: 0 auto;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
 }

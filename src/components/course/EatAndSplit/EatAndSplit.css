@@ -1,28 +1,7 @@
-/* :root {
-  --color-lightest: #fff4e6;
-  --color-light: #ffe8cc;
-  --color-medium: #ffa94d;
-  --color-dark: #ff922b;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-*/
 .eat-n-split-body {
-  height: 90vh;
-  color: #495057;
+  color: var(--text);
   display: flex;
-  padding: 10rem;
-  margin: 10rem;
+  padding: 2rem;
   align-items: center;
   justify-content: center;
 }
@@ -31,48 +10,49 @@ html {
   min-height: 66vh;
   display: grid;
   grid-template-columns: 34rem 44rem;
-  column-gap: 4rem;
+  column-gap: 3rem;
   align-items: start;
 }
 
 .eat-and-split-button {
-  background-color: var(--color-medium);
-  color: #343a40;
-  padding: 0.8rem 1.2rem;
+  background-color: var(--accent);
+  color: #fff;
+  padding: 0.5rem 1rem;
   border: none;
-  border-radius: 7px;
-  font-weight: bold;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background 0.2s;
 }
 
 .eat-and-split-button:hover {
-  background-color: var(--color-dark);
+  background-color: var(--accent2);
 }
 
 .eat-and-split-sidebar ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
-  font-size: 1.4rem;
-  margin-bottom: 2rem;
+  gap: 0.3rem;
+  margin-bottom: 1.5rem;
 }
 
 .eat-and-split-sidebar li {
   display: grid;
-  grid-template-columns: 4.8rem 1fr auto;
+  grid-template-columns: 4rem 1fr auto;
   align-items: center;
-  column-gap: 1.6rem;
-
-  padding: 1.2rem;
-  border-radius: 7px;
-  transition: 0.5s;
+  column-gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: background 0.15s, border-color 0.15s;
 }
 
 .eat-and-split-selected,
 .eat-and-split-sidebar li:hover {
-  background-color: var(--color-lightest);
+  background-color: var(--surface2);
+  border-color: var(--border);
 }
 
 .eat-and-split-sidebar li img {
@@ -84,11 +64,15 @@ html {
 .eat-and-split-sidebar li h3 {
   grid-row: 1;
   grid-column: 2;
+  font-size: 0.9rem;
+  color: var(--text);
 }
 
 .eat-and-split-sidebar li p {
   grid-row: 2;
   grid-column: 2;
+  font-size: 0.8rem;
+  color: var(--muted);
 }
 
 .eat-and-split-sidebar li .button {
@@ -96,80 +80,78 @@ html {
   grid-column: 3;
 }
 
-.eat-and-split-sidebar>.button {
+.eat-and-split-sidebar > .button {
   float: right;
-  margin-right: 1.2rem;
+  margin-right: 1rem;
 }
 
 .green {
-  font-size: 2rem !important;
-  color: #66a80f;
+  color: #4ade80 !important;
+  font-weight: 600;
 }
 
 .red {
-  font-size: 2rem !important;
-  color: #e03131;
+  color: #f87171 !important;
+  font-weight: 600;
 }
 
 .eat-and-split-form {
-  font-size: 1.6rem;
   display: grid;
   align-items: center;
-  gap: 1.2rem;
-
-  background-color: var(--color-lightest);
-  border-radius: 7px;
+  gap: 0.9rem;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.875rem;
 }
 
 .eat-and-split-form-add-friend {
   grid-template-columns: 1fr 1.5fr;
-  margin-bottom: 1.6rem;
-  padding: 1.2rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 .eat-and-split-form-split-bill {
-  grid-template-columns: 1fr 12rem;
-  padding: 3.2rem 4rem;
+  grid-template-columns: 1fr 10rem;
+  padding: 1.5rem 2rem;
 }
 
 .eat-and-split-app label {
-  font-size: 2rem !important;
+  font-size: 0.85rem !important;
   font-weight: 500;
-}
-
-.eat-and-split-app label::first-letter {
-  display: inline-block;
-  margin-right: 4px;
-  font-size: 1.8rem;
+  color: var(--muted);
 }
 
 .eat-and-split-app input,
-select {
+.eat-and-split-app select {
   font-family: inherit;
-  color: inherit;
-  font-size: 1.5rem;
-  padding: 0.7rem;
+  color: var(--text);
+  background: var(--surface2);
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
   text-align: center;
-  border: 1px solid var(--color-light);
-  border-radius: 4px;
-  transition: 0.3s;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: border-color 0.2s;
 }
 
 .eat-and-split-app input:focus,
-select:focus {
+.eat-and-split-app select:focus {
   outline: none;
-  border: 1px solid var(--color-dark);
+  border-color: var(--accent);
 }
 
 .eat-and-split-app form .button {
-  margin-top: 0.6rem;
+  margin-top: 0.4rem;
   grid-column: 2;
 }
 
 .eat-and-split-app form h2 {
   grid-column: 1 / -1;
-  font-size: 2.2rem;
+  font-size: 0.75rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: -0.5px;
-  margin-bottom: 1.6rem;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
 }

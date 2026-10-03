@@ -1,85 +1,67 @@
 .blogContainer {
-    /* height: 98%;
-    width: 98%;
-    background: green;
-    border: .2rem solid grey;
-    border-radius: .5rem;
-    box-shadow: .2rem .2rem .2rem .2rem rgb(235, 229, 229); */
-    /* overflow: hidden; */
+  padding: 1rem;
+  color: var(--text);
 }
 
 .blogPostComment {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 1rem;
-    height: 10rem; */
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border);
+  align-items: flex-start;
 }
 
-.blogPostCommentAvatar {
-    /* border-radius: 8px; */
-
-    /* Oval Shape*/
-    /* border-radius: 50%; */
-
-    /* align-self: center; */
-
-    /* display: block; */
-    /* margin-left: auto;
-    margin-right: auto; */
-}
-
-.blogPostCommentAvatar:hover {
-    /* border-radius: 1rem; */
-}
+.blogPostCommentAvatar {}
 
 .blogPostCommentAvatarImage {
-    /* height: 2rem;
-    width: 2rem; */
-    /* object-fit: scale-down; */
-    /* border-radius: 1rem;
-    align-self: center; */
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-
 .blogPostCommentContent {
-    align-self: center;
+  align-self: center;
+  flex: 1;
 }
 
 .blogPostCommentContentAuthor {
-    /* align-self: center; */
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text);
 }
 
 .blogPostCommentContentMetadata {
-    /* align-self: center; */
+  font-size: 0.75rem;
+  color: var(--muted);
 }
 
-.blogPostCommentContentDate {}
+.blogPostCommentContentDate {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
 
-.blogPostCommentContentText {}
+.blogPostCommentContentText {
+  font-size: 0.875rem;
+  color: var(--text);
+  margin-top: 0.25rem;
+}
 
-/* UserCard */
 .userCard {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 1rem;
-    height: 50%;
-    width: 50%;
-    background: rgb(223, 223, 121);
-    border: .2rem solid grey;
-    border-radius: .5rem;
-    box-shadow: .2rem .2rem .2rem .2rem rgb(14, 0, 0);
-    overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem;
+  width: 50%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
 }
-
 
 .userCardContent {}
-
-.userCardContentHeader {}
-
-.userCardContentDescription {}
-
+.userCardContentHeader { font-weight: 600; color: var(--text); }
+.userCardContentDescription { font-size: 0.875rem; color: var(--muted); }
 .userCardBottom {}
-
 .userCardBottomAddIcon {}

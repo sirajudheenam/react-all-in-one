@@ -1,22 +1,10 @@
-/*
-:root {
-  --color-darkest: #343a40;
-  --color-dark: #495057;
-  --color-medium: #ced4da;
-  --color-light: #f1f3f5;
-
-  --color-theme: #1098ad;
-  --color-accent: #ffa94d;
-}
-
-*/
 @import url("https://fonts.googleapis.com/css2?family=Codystar&display=swap");
 
 .react-quiz-body {
   min-height: 100vh;
-  color: var(--color-light-react-quiz);
-  background-color: var(--color-darkest-react-quiz);
-  padding: 3.2rem;
+  color: var(--text);
+  background-color: var(--bg);
+  padding: 2rem;
 }
 
 .react-quiz-app {
@@ -27,50 +15,57 @@
 }
 
 .react-quiz-app-main {
-  width: 50rem;
+  width: 95%;
+  max-width: 600px;
 }
 
 .react-quiz-app-header {
-  width: 66rem;
-  margin-bottom: 4rem;
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .react-quiz-app-header-image {
-  width: 14rem;
+  width: 10rem;
 }
 
 .react-quiz-app-error {
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 500;
-  padding: 2rem;
-  background-color: #495057;
+  padding: 1.25rem 2rem;
+  background-color: var(--surface2);
   border-radius: 100px;
+  color: var(--text);
 }
 
 .react-quiz-app h1 {
   font-family: "Codystar";
-  font-size: 5.6rem;
+  font-size: 2.8rem;
+  color: var(--text);
 }
 
 .react-quiz-app h2 {
-  font-size: 3.6rem;
-  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--text);
 }
 
 .react-quiz-app h3 {
-  font-size: 2.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  color: var(--text);
 }
 
 .react-quiz-app h4 {
-  font-size: 2.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.2rem;
+  color: var(--text);
 }
 
 .start {
@@ -80,50 +75,51 @@
 }
 
 .progress {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   display: grid;
   justify-content: space-between;
-  gap: 1.2rem;
+  gap: 0.75rem;
   grid-template-columns: auto auto;
-  font-size: 1.8rem;
-  color: var(--color-medium-react-quiz);
+  font-size: 0.9rem;
+  color: var(--muted);
 }
 
 progress {
   -webkit-appearance: none;
   width: 100%;
-  height: 12px;
+  height: 10px;
   grid-column: 1 / -1;
 }
 
 ::-webkit-progress-bar {
-  background-color: var(--color-medium-react-quiz);
+  background-color: var(--surface2);
   border-radius: 100px;
 }
 
 ::-webkit-progress-value {
-  background-color: var(--color-theme-react-quiz);
+  background-color: var(--accent);
   border-radius: 100px;
 }
 
 .react-quiz-app .btn {
   display: block;
   font-family: inherit;
-  font-size: 2rem;
-  border: 2px solid var(--color-dark-react-quiz);
-  background-color: var(--color-dark-react-quiz);
-  padding: 1.2rem 2.4rem;
+  font-size: 0.95rem;
+  border: 2px solid var(--surface2);
+  background-color: var(--surface2);
+  color: var(--text);
+  padding: 0.6rem 1.4rem;
   cursor: pointer;
   border-radius: 100px;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .react-quiz-app .btn:not([disabled]):hover {
-  background-color: var(--color-darkest-react-quiz);
+  border-color: var(--accent);
 }
 
 .btn-option:not([disabled]):hover {
-  transform: translateX(1.2rem);
+  transform: translateX(0.6rem);
 }
 
 .btn[disabled]:hover {
@@ -137,8 +133,8 @@ progress {
 .options {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
-  margin-bottom: 3.2rem;
+  gap: 0.6rem;
+  margin-bottom: 1.6rem;
 }
 
 .btn-option {
@@ -147,64 +143,63 @@ progress {
 }
 
 .btn-option.correct {
-  background-color: var(--color-theme-react-quiz);
-  border: 2px solid var(--color-theme-react-quiz);
-  color: var(--color-light-react-quiz);
+  background-color: var(--accent);
+  border: 2px solid var(--accent);
+  color: #fff;
 }
 
 .btn-option.wrong {
-  background-color: var(--color-accent-react-quiz);
-  border: 2px solid var(--color-accent-react-quiz);
-  color: var(--color-darkest-react-quiz);
+  background-color: #ef4444;
+  border: 2px solid #ef4444;
+  color: #fff;
 }
 
 .answer {
-  transform: translateX(2rem);
+  transform: translateX(1rem);
 }
 
 .result {
-  background-color: var(--color-theme-react-quiz);
-  color: var(--color-light-react-quiz);
+  background-color: var(--accent);
+  color: #fff;
   border-radius: 100px;
   text-align: center;
-  padding: 2rem 0;
-  font-size: 2rem;
+  padding: 1rem 0;
+  font-size: 1rem;
   font-weight: 500;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 .result span {
-  font-size: 2.2rem;
+  font-size: 1.1rem;
   margin-right: 4px;
 }
 
 .highscore {
-  font-size: 1.8rem;
+  font-size: 0.9rem;
   text-align: center;
-  margin-bottom: 4.8rem;
+  margin-bottom: 2.4rem;
+  color: var(--muted);
 }
 
 .loader-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 4rem;
-  gap: 1.6rem;
-
-  color: var(--color-medium-react-quiz);
-  font-size: 1.4rem;
+  margin-top: 2rem;
+  gap: 0.8rem;
+  color: var(--muted);
+  font-size: 0.875rem;
 }
 
 .timer {
   float: left;
-  font-size: 1.8rem;
-  color: var(--color-medium-react-quiz);
-  border: 2px solid var(--color-dark-react-quiz);
-  padding: 1.35rem 2.8rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  border: 2px solid var(--surface2);
+  padding: 0.6rem 1.4rem;
   border-radius: 100px;
 }
 
-/* CREDIT: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
 .loader {
   width: 50px;
   height: 24px;
@@ -217,36 +212,24 @@ progress {
 }
 
 @keyframes loader {
-  20% {
-    background-position: 0% 0%, 50% 50%, 100% 50%;
-  }
-
-  40% {
-    background-position: 0% 100%, 50% 0%, 100% 50%;
-  }
-
-  60% {
-    background-position: 0% 50%, 50% 100%, 100% 0%;
-  }
-
-  80% {
-    background-position: 0% 50%, 50% 50%, 100% 100%;
-  }
+  20% { background-position: 0% 0%, 50% 50%, 100% 50%; }
+  40% { background-position: 0% 100%, 50% 0%, 100% 50%; }
+  60% { background-position: 0% 50%, 50% 100%, 100% 0%; }
+  80% { background-position: 0% 50%, 50% 50%, 100% 100%; }
 }
 
-/* ********** */
-/* First counter example */
 .counter {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: bold;
-  margin: 6rem;
+  margin: 3rem;
+  color: var(--text);
 }
 
 .counter * {
   font-size: inherit;
-  padding: 0.8rem;
+  padding: 0.5rem;
 }

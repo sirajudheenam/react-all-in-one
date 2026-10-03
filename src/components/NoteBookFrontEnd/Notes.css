@@ -1,74 +1,87 @@
 .App-header {
   text-align: center;
-  height: 150px;
-  padding: 20px;
+  padding: 1rem;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1rem;
 }
 
 .App-intro {
-  font-size: large;
+  font-size: 0.9rem;
+  color: var(--muted);
 }
 
 .tile {
-  height: 150px;
-  width: 150px;
-  margin: 10px;
-  background: yellow; /*lightyellow;*/
+  height: 140px;
+  width: 140px;
+  margin: 0.5rem;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   float: left;
-  font-size: 11px;
+  font-size: 0.75rem;
   text-align: center;
-  border-radius: 5px;
+  color: var(--text);
+  transition: border-color 0.15s;
+  position: relative;
+}
+
+.tile:hover {
+  border-color: var(--accent);
 }
 
 .newNoteButton {
-  background: darkblue;
-  color: white;
+  background: var(--accent);
+  color: #fff;
   border: none;
-  font-size: 18px;
+  font-size: 0.9rem;
   cursor: pointer;
-  margin-right: 10px;
-  margin-left: 10px;
-  padding: 10px;
-  border-radius: 5px;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.15s;
 }
 
 .newNoteButton:hover {
-  background: darkgreen;
-  color: white;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
-  margin-right: 10px;
-  margin-left: 10px;
-  padding: 10px;
-  border-radius: 5px;
+  background: var(--accent2);
 }
 
 .input {
-  border: 0;
+  border: none;
   background: none;
   outline: none;
-  margin-top: 10px;
-  width: 140px;
-  font-size: 11px;
+  margin-top: 0.5rem;
+  width: 120px;
+  font-size: 0.75rem;
+  color: var(--text);
 }
 
 .input:focus {
-  border: solid 1px lightgrey;
+  border-bottom: 1px solid var(--border);
 }
 
 textarea {
   resize: none;
-  height: 90px;
-  font-size: 11px;
+  height: 80px;
+  font-size: 0.75rem;
+  background: transparent;
+  color: var(--text);
+  border: none;
+  width: 100%;
+  padding: 0.25rem;
 }
 
 .deleteButton {
   visibility: hidden;
-  float: right;
-  margin: 5px;
-  font-size: 14px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 0.8rem;
   cursor: pointer;
-  color: red;
+  color: #f87171;
+  background: none;
+  border: none;
 }
 
 .tile:hover .deleteButton {
