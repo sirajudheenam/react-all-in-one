@@ -33,6 +33,7 @@ Storage.prototype.getObj = function (key) {
 const capitalizeFirstLetter = (string) =>
   string[0].toUpperCase() + string.slice(1);
 
+// eslint-disable-next-line no-unused-vars
 function titleCaseString(string) {
   return string
     .split(' ')
@@ -70,7 +71,7 @@ export default function DogData() {
       <h1 className="text-8xl font-bold uppercase">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500">
           Dog Data using{' '}
-          <a href="https://dog.ceo/dog-api/documentation/" target="_blank">
+          <a href="https://dog.ceo/dog-api/documentation/" target="_blank" rel="noreferrer">
             Dog API
           </a>
         </span>

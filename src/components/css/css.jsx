@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Grid from './grid';
+// eslint-disable-next-line no-unused-vars
 import Canvas from './canvas';
 import DrawingCanvas from './DrawingCanvas';
 

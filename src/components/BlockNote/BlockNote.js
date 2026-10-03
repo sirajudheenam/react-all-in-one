@@ -36,7 +36,7 @@ const BlockNote = () => {
           </div>
           <div className="blocknote-header-flex-item-2">
             <h6>
-              <a href="https://www.blocknotejs.org/docs" target="_blank">
+              <a href="https://www.blocknotejs.org/docs" target="_blank" rel="noreferrer">
                 BlockNote Documentation
               </a>
             </h6>

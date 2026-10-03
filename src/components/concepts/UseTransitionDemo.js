@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useTransition, useMemo } from 'react';
+import React, { useEffect, useState, useTransition } from 'react';
 
 import './UseTransitionDemo.css';
 
@@ -17,7 +17,7 @@ const UseTransitionDemo = () => {
   const [pokemon, setPokemon] = useState([]);
 
   useEffect(() => {
-    let active = true;
+    let active = true; // eslint-disable-line no-unused-vars
     getPokemon();
     return () => {
       active = false;

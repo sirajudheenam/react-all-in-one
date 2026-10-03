@@ -1,4 +1,5 @@
 import React from 'react';
+// eslint-disable-next-line no-unused-vars
 import styles from './styles.module.css';
 const SingleComment = (props) => {
   return (

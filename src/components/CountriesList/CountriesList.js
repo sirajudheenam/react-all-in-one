@@ -6,6 +6,7 @@ import countryRegionData from 'country-region-data/dist/data-umd';
 
 // // Country Region Data
 // let countriesList = allCountries[243];
+// eslint-disable-next-line no-unused-vars
 let countryRegionDatum = countryRegionData[245];
 // let countryJSON = json;
 

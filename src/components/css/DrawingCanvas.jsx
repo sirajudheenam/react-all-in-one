@@ -7,7 +7,7 @@ const DrawingCanvas = () => {
     const colorRef = useRef(null);
     const [canvas, setCanvas] = useState(null);
     const [context, setContext] = useState(null);
-    const [currentTool, setCurrentTool] = useState('FREESTYLE');
+    const [currentTool, setCurrentTool] = useState('FREESTYLE'); // eslint-disable-line no-unused-vars
     const [isDrawing, setIsDrawing] = useState(false);
 
     useEffect(() => {

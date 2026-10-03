@@ -97,7 +97,7 @@ export default function NounCardContainer({ nouns }) {
     } else {
       localStorage.setItem("currentNounIndex", currentNounIndex);
     }
-  }, []);
+  }, [currentNounIndex]); // eslint-disable-line react-hooks/exhaustive-deps
   return (
     <div className="relative flex flex-row mt-6 text-blue-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-120 h-96">
       <>
