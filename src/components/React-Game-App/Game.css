@@ -1,51 +1,93 @@
-body {
-    font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
-  }
-  
-  ol, ul {
-    padding-left: 30px;
-  }
-  
-  .board-row:after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .status {
-    margin-bottom: 10px;
-  }
-  
-  .square {
-    background: #fff;
-    border: 1px solid #999;
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 34px;
-    height: 34px;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
-    text-align: center;
-    width: 34px;
-  }
-  
-  .square:focus {
-    outline: none;
-  }
-  
-  .kbd-navigation .square:focus {
-    background: #ddd;
-  }
-  
-  .game {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .game-info {
-    margin-left: 20px;
-  }
-  
+/* React-Game-App — themed */
+.board-row {
+  display: flex;
+}
+
+.board-row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.square {
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1;
+  height: 56px;
+  width: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text);
+  transition: background 0.12s, border-color 0.12s;
+  float: left;
+  margin-right: -1px;
+  margin-top: -1px;
+}
+
+.square:focus {
+  outline: none;
+  background: var(--accent);
+  color: #fff;
+  z-index: 1;
+  position: relative;
+}
+
+.square:hover {
+  background: var(--surface);
+  border-color: var(--accent);
+  z-index: 1;
+  position: relative;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: var(--text);
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: 160px;
+}
+
+.game-info ol {
+  list-style: decimal;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.game-info button {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: var(--radius-sm);
+  padding: 0.3rem 0.75rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: border-color 0.15s;
+  width: 100%;
+  text-align: left;
+}
+
+.game-info button:hover {
+  border-color: var(--accent);
+}

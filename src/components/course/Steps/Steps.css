@@ -1,5 +1,6 @@
 .steps {
-  width: 560px;
+  width: 100%;
+  max-width: 560px;
   background-color: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);

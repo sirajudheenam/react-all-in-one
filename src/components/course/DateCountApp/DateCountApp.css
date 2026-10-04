@@ -1,0 +1,46 @@
+/* DateCountApp — themed layout */
+.date-count-app {
+  max-width: 520px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: var(--text);
+}
+
+.date-count-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.date-count-row span {
+  min-width: 120px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.date-count-app input[type="range"] {
+  width: 100%;
+}
+
+.date-count-app input[type="text"] {
+  text-align: center;
+}
+
+.date-count-result {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent2);
+  padding: 1rem;
+  background: var(--surface2);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}

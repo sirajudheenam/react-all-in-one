@@ -50,19 +50,19 @@ const UseTransitionDemo = () => {
 
   return (
     <>
-      <div className="App">
+      <div className="App transition-demo">
         <header className="demo-header">
           <div className="demo-header__badge">useTransition</div>
           <h1 className="demo-header__title">useTransition Demo</h1>
           <p className="demo-header__desc">Marks expensive state updates as non-urgent with useTransition to keep the UI responsive.</p>
         </header>
-        <input onChange={handleChange} type="text" value={input} />
-        {isPending && 'Loading...'}
-        {filteredPokemon.map((poke) => (
-          <div key={poke.name}>
-            <h1>{poke.name}</h1>
-          </div>
-        ))}
+        <input onChange={handleChange} type="text" value={input} placeholder="Filter Pokémon…" />
+        {isPending && <span className="pending">Filtering…</span>}
+        <ul className="transition-demo-list">
+          {filteredPokemon.map((poke) => (
+            <li key={poke.name}>{poke.name}</li>
+          ))}
+        </ul>
       </div>
     </>
   );

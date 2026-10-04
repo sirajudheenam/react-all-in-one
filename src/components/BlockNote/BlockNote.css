@@ -1,65 +1,70 @@
+/* BlockNote — full-height editor container */
 .blocknote-container {
-  height: 98%;
-  width: 98%;
+  display: flex;
+  flex-direction: column;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
+  min-height: 500px;
 }
 
 .blocknote-header-flex-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 0.75rem 1rem;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
   border-bottom: 1px solid var(--border);
   background: var(--surface2);
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .blocknote-header-flex-item-1 {
   order: 1;
-  padding: 0.5rem 1rem;
-  color: var(--accent2);
-  background: transparent;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  transition: background 0.15s, color 0.15s;
 }
 
-.blocknote-header-flex-item-1:hover {
-  background: var(--surface);
-  color: var(--text);
-  border-color: var(--accent);
+.blocknote-header-flex-item-1 h1 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--accent2);
+  margin: 0;
 }
 
 .blocknote-header-flex-item-2 {
   order: 2;
 }
 
+.blocknote-header-flex-item-2 h6 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--muted);
+  margin: 0;
+}
+
+.blocknote-header-flex-item-2 a {
+  color: var(--accent2);
+  text-decoration: none;
+}
+
+.blocknote-header-flex-item-2 a:hover {
+  text-decoration: underline;
+}
+
 .blocknote-header-flex-item-3 {
   order: 3;
-  align-self: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .tooltip {
-  visibility: hidden;
+  font-size: 0.75rem;
+  color: var(--muted);
+  white-space: nowrap;
 }
 
 .tooltip-hover:hover + .tooltip {
   visibility: visible;
-}
-
-.blocknote-container h1 {
-  text-align: center;
-  color: var(--text);
-  font-size: 1.1rem;
-  margin: 0;
-}
-
-.blocknote-container h6 {
-  text-align: center;
-  color: var(--muted);
-  font-size: 0.75rem;
-  margin: 0;
 }

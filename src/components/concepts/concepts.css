@@ -1,21 +1,36 @@
+/* concepts.css — improved container layout */
 .concepts-flex-container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  justify-content: center;
-  margin: 0 auto;
+  gap: 1.25rem;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.5rem;
-  align-items: normal;
+  padding: 1.75rem;
+  max-width: 780px;
+  margin: 0 auto;
 }
 
 .concepts-flex-container-item {
-  align-self: baseline;
-  margin: 0 auto;
   background: var(--surface2);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1rem;
+  border-radius: var(--radius-sm);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.concepts-flex-container-item h2,
+.concepts-flex-container-item h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.concepts-flex-container-item p {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.6;
 }

@@ -1,8 +1,9 @@
+/* FlashCard — responsive grid */
 .flashcards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
-  padding: 1.5rem;
+  padding: 0.5rem 0;
 }
 
 .flashcards div {
@@ -18,13 +19,14 @@
   cursor: pointer;
   color: var(--text);
   font-size: 0.9rem;
-  transition: border-color 0.15s, background 0.15s, transform 0.1s;
+  transition: border-color 0.15s, background 0.15s, transform 0.18s cubic-bezier(.34,1.56,.64,1), box-shadow 0.18s;
 }
 
 .flashcards div:hover {
   border-color: var(--accent);
   background-color: var(--surface2);
-  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: var(--shadow-sm);
 }
 
 div.selected {

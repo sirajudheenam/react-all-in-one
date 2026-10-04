@@ -1,1 +1,43 @@
-/* UseTransitionDemo — no custom styles needed beyond root theme */
+/* UseTransitionDemo */
+.App.transition-demo {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  color: var(--text);
+}
+
+.transition-demo .pending {
+  font-size: 0.85rem;
+  color: var(--accent2);
+  font-weight: 600;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
+.transition-demo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.transition-demo-list li {
+  padding: 0.5rem 0.75rem;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  color: var(--text);
+}

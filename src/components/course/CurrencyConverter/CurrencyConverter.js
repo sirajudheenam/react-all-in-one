@@ -2,6 +2,7 @@
 // `https://api.frankfurter.app/latest?amount=100&from=EUR&to=USD`
 
 import { useEffect, useState } from 'react';
+import './CurrencyConverter.css';
 export async function action() {
   return null;
 }
@@ -32,7 +33,7 @@ export default function CurrencyConverter() {
   }, [amount, sourceCurrency, targetCurrency]);
 
   return (
-    <div className="App">
+    <div className="App currency-converter">
       <header className="demo-header">
         <div className="demo-header__badge">useEffect · fetch</div>
         <h1 className="demo-header__title">Currency Converter</h1>

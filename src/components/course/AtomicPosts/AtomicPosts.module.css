@@ -185,3 +185,22 @@
   padding: 0.2rem 0.6rem;
   font-size: 0.75rem;
 }
+
+@media (max-width: 800px) {
+  .atomicMain ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .atomicMain ul {
+    grid-template-columns: 1fr;
+  }
+  .atomicForm {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .atomicInput {
+    width: 100%;
+  }
+}

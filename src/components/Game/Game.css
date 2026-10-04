@@ -1,13 +1,33 @@
-.game {
-  font-family: system-ui, -apple-system, sans-serif;
-  margin: 1.5rem;
-  min-height: 260px;
+/* Game (Tic-Tac-Toe) — centered with good spacing */
+.game-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 520px;
+  margin: 0 auto;
   color: var(--text);
 }
 
-.game ol,
-.game ul {
-  padding-left: 1.5rem;
+.game {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: var(--text);
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.board-row {
+  display: flex;
 }
 
 .board-row::after {
@@ -17,10 +37,11 @@
 }
 
 .status {
-  margin-bottom: 0.75rem;
-  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--text);
+  min-height: 1.5em;
 }
 
 .restart {
@@ -29,62 +50,71 @@
 
 .square {
   background: var(--surface2);
-  border: 1px solid var(--border);
-  float: left;
-  font-size: 1.4rem;
-  font-weight: bold;
-  line-height: 34px;
-  height: 40px;
-  width: 40px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
+  border: 1px solid var(--border2);
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1;
+  height: 56px;
+  width: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   color: var(--text);
-  transition: background 0.1s;
+  transition: background 0.12s, border-color 0.12s;
+  float: left;
+  margin-right: -1px;
+  margin-top: -1px;
 }
 
 .square:focus {
   outline: none;
   background: var(--accent);
   color: #fff;
+  z-index: 1;
+  position: relative;
 }
 
 .square:hover {
   background: var(--surface);
   border-color: var(--accent);
-}
-
-.game {
-  display: flex;
-  flex-direction: row;
+  z-index: 1;
+  position: relative;
 }
 
 .game-info {
-  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   min-width: 160px;
 }
 
 .game-info ol {
   list-style: decimal;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .game-info li {
-  margin-bottom: 0.25rem;
+  font-size: 0.85rem;
 }
 
 .game-info button {
   background: var(--surface2);
   border: 1px solid var(--border);
   color: var(--text);
-  border-radius: 4px;
-  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  padding: 0.3rem 0.75rem;
   font-size: 0.8rem;
   cursor: pointer;
-  transition: border-color 0.15s;
+  transition: border-color 0.15s, background 0.15s;
+  width: 100%;
+  text-align: left;
 }
 
 .game-info button:hover {
   border-color: var(--accent);
+  background: var(--surface);
 }

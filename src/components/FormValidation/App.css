@@ -1,24 +1,27 @@
+/* FormValidation App — replaced old hardcoded styles */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: var(--text);
 }
 
 .App-header {
-  background-color: #222;
-  height: 200px;
-  padding: 20px;
-  color: white;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.App-header h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
 }
 
 .App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  font-size: 0.9rem;
+  color: var(--muted);
 }

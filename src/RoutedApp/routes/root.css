@@ -3,7 +3,7 @@
 #sidebar { display: none !important; width: 0 !important; }
 #detail  {
   flex: unset !important;
-  padding: 2.5rem 2rem !important;
+  padding: 2rem 1.5rem 3rem !important;
   border: none !important;
   box-shadow: none !important;
   width: 100% !important;
@@ -200,6 +200,7 @@ body {
   margin-right: auto;
 }
 
+/* Components that need wider canvas */
 #detail > [class*="app"],
 #detail > [class*="App"],
 #detail > [class*="quiz"],
@@ -211,8 +212,27 @@ body {
 #detail > [class*="Expense"],
 #detail > [class*="atomic"],
 #detail > [class*="dog"],
-#detail > [class*="Dog"] {
-  max-width: 960px;
+#detail > [class*="Dog"],
+#detail > [class*="eat"],
+#detail > [class*="de-flashcard"],
+#detail > [class*="FlashCardApp"] {
+  max-width: 1000px;
+}
+
+/* TravelList uses full-width grid internally */
+#detail > [class*="travel"],
+#detail > [class*="Travel"],
+#detail > .app {
+  max-width: 100%;
+}
+
+/* Ensure all .App divs are centred and have padding */
+#detail .App,
+#detail .currency-converter,
+#detail .transition-demo,
+#detail .date-count-app {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Modals centred in viewport */

@@ -1,17 +1,19 @@
 .eat-n-split-body {
   color: var(--text);
   display: flex;
-  padding: 2rem;
-  align-items: center;
+  padding: 1.5rem;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .eat-n-split-app {
   min-height: 66vh;
   display: grid;
-  grid-template-columns: 34rem 44rem;
-  column-gap: 3rem;
+  grid-template-columns: minmax(280px, 34rem) minmax(320px, 44rem);
+  column-gap: 2rem;
   align-items: start;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .eat-and-split-button {
@@ -154,4 +156,13 @@
   letter-spacing: 0.1em;
   color: var(--muted);
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 760px) {
+  .eat-n-split-app {
+    grid-template-columns: 1fr;
+  }
+  .eat-n-split-body {
+    padding: 1rem;
+  }
 }
